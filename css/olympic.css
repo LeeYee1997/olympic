@@ -1,0 +1,114 @@
+/* general */
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    line-height: 2.0;
+    overflow-x: hidden;
+    color: #4d5259;
+}
+img{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #10161A;
+}
+.white-text{
+  color: rgb(255, 255, 255);
+}
+.sm-padding{
+  padding: 20px;
+}
+p{
+  line-height: 2;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+
+}
+li{
+  margin-bottom: 10px;
+}
+h1 {
+    font-size: 54px;
+}
+
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+
+/* end general */
+
+/* cover */
+#cover {
+    height: 100vh;
+}
+#cover .cover-wrapper{
+  position: absolute;
+
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+.bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-img .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .8;
+    background: #c2c2c2;
+}
+.home-content{
+    background-color: rgb(38, 38, 38);
+    opacity: 0.5;
+}
+/* content */
+.content{
+  margin-top: 40px;
+}
+.project-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
