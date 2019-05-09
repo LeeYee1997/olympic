@@ -209,7 +209,7 @@ option6 = {
         text: '2018'
     },
      tooltip: {
-        formatter: "平昌：6300</br>安纳西：2500</br>慕尼黑：1860",
+        formatter: "平昌：$ 6300m</br>安纳西：2500</br>慕尼黑：1860",
         backgroundColor:"rgba(255,255,255,0.7)"
      },
     color:['#265473'],
@@ -399,3 +399,16 @@ var yScale6 = d3.scaleLinear().range([ height6, 0 ]);
  .attr("r", 10)
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
+
+  svg6.append("text")
+    .attr("transform", "translate(" + xScale6(0)+ " ," + yScale6(15) + ")")
+    .style("text-anchor", "left")
+    .attr("dy", 0)
+    .style("fill", "rgb(131, 131, 131)")
+    .text("数据来源：国际奥林匹克委员会官方网站");
+    svg6.append("text")
+      .attr("transform", "translate(" + xScale6(22)+ " ," + yScale6(5) + ")")
+      .style("text-anchor", "left")
+      .attr("dy", 0)
+      .style("fill", "rgb(131, 131, 131)")
+      .text("——历届奥运会各申办城市申奥文件");

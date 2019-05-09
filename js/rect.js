@@ -31,7 +31,20 @@ var width1 = document.all.rect.offsetWidth;;
                 .style("text-anchor", "middle")
                 .attr("dy", 0)
                 .style("font-weight", "bold")
-                .text("北京冬奥会场馆复用情况");
+                .text("北京赛区场馆利用情况");
+
+        svg1.append("text")
+          .attr("transform", "translate(" + xScale1(40)+ " ," + yScale1(40) + ")")
+          .style("text-anchor", "left")
+          .attr("dy", 0)
+          .style("fill", "rgb(131, 131, 131)")
+          .text("数据来源：");
+          svg1.append("text")
+            .attr("transform", "translate(" + xScale1(40)+ " ," + yScale1(35) + ")")
+            .style("text-anchor", "left")
+            .attr("dy", 0)
+            .style("fill", "rgb(131, 131, 131)")
+            .text("《中国冬季奥运会发展报告（2017）》 社会科学文献出版社");
 
         svg1.append("text")
                 .attr("class", "ylabel")
@@ -57,7 +70,7 @@ var width1 = document.all.rect.offsetWidth;;
                 .attr("dy", 0)
                 .text("改建场馆");
 
-        var tooltip = d3.select("body")
+        var rectooltip = d3.select("body")
                         .append("div")
                         .attr("class", "recttooltip");
 
@@ -190,7 +203,7 @@ var width1 = document.all.rect.offsetWidth;;
 
  function mouseoverFunc(d) {
             if (this.id === "shuilifang") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>国家游泳中心（水立方），</br>即将用于冰壶比赛</p>");
 
@@ -200,7 +213,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "guojiatiyuguan") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>国家体育馆，</br>即将用于男子冰球比赛</p>");
 
@@ -210,7 +223,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "wukesong") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>五棵松体育中心，</br>即将用于女子冰球比赛</p>");
 
@@ -220,7 +233,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "shoudutiyuguan") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>首都体育馆，</br>即将用于短道速滑及花样滑冰比赛</p>");
 
@@ -230,7 +243,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "guojiatiyuchang") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>国家体育场（鸟巢），</br>即将用于开闭幕式</p>");
 
@@ -240,7 +253,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "guojiahuiyizhongxin") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>国家会议中心，</br>即将用做新闻中心</p>");
 
@@ -250,7 +263,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "shouduhuabingguan") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>首都滑冰馆，</br>即将用于冬奥会训练</p>");
 
@@ -260,7 +273,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "shoutizongheguan") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>首体综合馆，</br>即将用于冬奥会训练</p>");
 
@@ -270,7 +283,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "guojiasuhuaguan") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>国家速滑馆，</br>即将用于速度滑冰比赛</p>");
 
@@ -280,7 +293,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "beijingaoyuncun") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>北京奥运村，</br>即将用于冬奥会住宿</p>");
 
@@ -290,7 +303,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "duandaosuhua") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>首体短道速滑馆，</br>即将用于冬奥会训练</p>");
 
@@ -300,7 +313,7 @@ var width1 = document.all.rect.offsetWidth;;
             }
 
             if (this.id === "banjiang") {
-            tooltip
+            rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
                 .html("<p>北京颁奖广场，</br>即将用于冬奥会颁奖</p>");
 
@@ -312,8 +325,8 @@ var width1 = document.all.rect.offsetWidth;;
 
 
         function mousemoveFunc(d) {
-            tooltip
-                .style("top", (d3.event.pageY - 10) + "px" )
+            rectooltip
+                .style("top", (d3.event.pageY +20) + "px" )
                 .style("left", (d3.event.pageX + 10) + "px");
     }
 
@@ -327,5 +340,5 @@ var width1 = document.all.rect.offsetWidth;;
                     }
 
             })
-            tooltip.style("display", "none");
+            rectooltip.style("display", "none");
      }

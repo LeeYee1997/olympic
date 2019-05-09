@@ -311,7 +311,7 @@ $(function(){
   var setPinChapter3= new ScrollMagic.Scene({
     triggerElement: "#chapter3-cover",
     triggerHook: 0,
-    duration: '5370',//真正控制每个章节的高度
+    duration: '5430',//真正控制每个章节的高度
   })
   .setPin("#chapter3-cover")
   .on("enter", function(){

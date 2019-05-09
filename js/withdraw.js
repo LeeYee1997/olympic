@@ -63,7 +63,13 @@ var xAxis = d3.axisTop(xScale).ticks(15);
       .style("text-anchor", "left")
       .attr("dy", 0)
       .text("历届奥运会申办情况");
-
+    svg.append("text")
+      // .attr("class", "data-source")
+      .attr("transform", "translate(" + xScale(12)+ " ," + 340 + ")")
+      .style("text-anchor", "left")
+      .attr("dy", 0)
+      .style("fill", "rgb(131, 131, 131)")
+      .text("数据来源：公开数据整理");
   svg.append("text")
     .attr("class", "xlabel")
     .attr("transform", "translate(" + -60 + " ," + 60+ ")")
