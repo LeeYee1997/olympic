@@ -1,8 +1,13 @@
 (function($) {
 	"use strict"
 
-	///////////////////////////
 
+	///////////////////////////
+	// Preloader
+	$(window).on('load', function() {
+		$("#preloader").delay(600).fadeOut();
+	});
+	
 	// Scrollspy
 	$('body').scrollspy({
 		target: '#nav',
@@ -16,25 +21,31 @@
 		var hash = this.hash;
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top
-		}, 600);
+		}, 1200);
 	});
 
+	$('#back-to-top').on('click', function(){
+	$('body,html').animate({
+		scrollTop: 0
+	}, 600);
+});
 
+
+	$('#about-slider').owlCarousel({
+		items:1,
+		loop:true,
+		margin:15,
+		nav: true,
+		navText : ['<span class="glyphicon glyphicon-chevron-left"></span>','<span class="glyphicon glyphicon-chevron-right"></span>'],
+		dots : true,
+		autoplay : true,
+		animateOut: 'fadeOut'
+	});
 
 
 
 	///////////////////////////
 	// On Scroll
-	$(window).on('scroll', function() {
-		var wScroll = $(this).scrollTop();
-
-		// Fixed nav
-    wScroll > 600 ? $('.into').addClass('affix') : $('.into').removeClass('affix');
-		wScroll > 600 ? $('.side-nav').addClass('affix') : $('.side-nav').removeClass('affix');
-    wScroll > 600 ? $('.maintext').addClass('col-md-offset-4') : $('.maintext').removeClass('col-md-offset-4');
-    wScroll > 600 ? $('.maintext').removeClass('col-md-offset-1') : $('.maintext').addClass('col-md-offset-1');
-
-	});
 
 
 

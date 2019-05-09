@@ -1,10 +1,23 @@
 /* general */
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #FFF;
+    z-index: 9999999;
+}
+.preloader img{
+  position: absolute;
+  height: 100px;
+}
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: "Microsoft YaHei";
     font-size: 16px;
     line-height: 2.0;
     overflow-x: hidden;
-    color: #4d5259;
+    color: black;
 }
 img{
   width: 100%;
@@ -13,8 +26,8 @@ img{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-family: 'Microsoft YaHei', sans-serif;
+    /* font-weight: 700; */
     margin-top: 20px;
     margin-bottom: 20px;
     color: #10161A;
@@ -22,12 +35,17 @@ h1, h2, h3, h4, h5, h6 {
 .white-text{
   color: rgb(255, 255, 255);
 }
+.blue-bg{
+    background-color: rgba(21,65,124,0.8);
+}
+.chapter{
+  width: 100%;
+  height: auto;
+}
 .sm-padding{
   padding: 20px;
 }
-p{
-  line-height: 2;
-}
+
 
 ul{
     margin: 0;
@@ -43,6 +61,8 @@ li{
 }
 h1 {
     font-size: 54px;
+    font-weight: bolder;
+    font-family: "宋体";
 }
 
 
@@ -51,7 +71,8 @@ h2 {
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 h4 {
@@ -84,20 +105,113 @@ a:hover{
   left: 10%;
   padding-right: 20px;
 }
-/* end general */
-
-/* cover */
-#cover {
-    height: 100vh;
+.chapter-wrapper{
+  position: relative;
+  height: 100%;
 }
-#cover .cover-wrapper{
+.container{
+  padding: 10px 0;
+
+}
+.give-me-some-margin{
+  margin: 0 20px;
+}
+.row.image-wrapper{
+  margin: 0 auto;
+  width: 660px;
+  overflow: hidden;
+}
+.row.text-wrapper{
+  width: 640px; margin:0 auto;  line-height: 28px; text-align: justify;
+  font-style: "Microsoft Yahei"
+}
+.row.text-wrapper p{padding-top: 15px; padding-bottom: 15px; font-weight: 400; margin-bottom: 0;}
+.row.text-wrapper-small{
+  width: 400px; margin:0 auto;  line-height: 28px; text-align: justify;
+  font-style: "Microsoft Yahei"
+
+}
+.row.text-wrapper-small p{padding-top: 15px; padding-bottom: 15px; font-weight: 400; margin-bottom: 0;}
+.row.chart-wrapper{
+  width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+/* end general */
+/*navigation*/
+/* .navigation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 1px 3px #888888;
+  z-index: 999999;
+  display: none;
+} */
+/* navs */
+.the-sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  background-color: rgba(38,84,115,0.2);
+  z-index: 999998;
+  display: none;
+}
+.sidebar-div{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+}
+.sidebar-div:hover{
+  background-color: rgba(38,84,115,0.4)
+}
+.nav-button{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999999;
+}
+.nav-button:hover{
+  background-color: rgba(38,84,115,0.4);
+}
+.cover{
+  height: 100vh;
+  position: relative;
+}
+/* cover */
+/* #cover {
+
+} */
+.cover-wrapper{
   position: absolute;
 
-    top: 50%;
+    top: 55%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
+}
+.title-all{
+      position: absolute;
+      left: 10%;
+      top: 35%;
+      width: 80%;
+}
+.title-sub{
+  width: 80%;
+}
+.chapter-title{
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  width: 90%;
 }
 .bg-img {
     position: absolute;
@@ -105,7 +219,7 @@ a:hover{
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -99999;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -117,17 +231,417 @@ a:hover{
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .8;
-    background: #c2c2c2;
+    opacity: .4;
+    background: #ffffff;
+}
+.bg-img .overlay-chapter1 {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    right: 0;
+    bottom: 20%;
+    opacity: .6;
+    background: #ffffff;
+}
+.overlay-deeper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
 }
 .home-content{
     background-color: rgb(38, 38, 38);
     opacity: 0.5;
 }
+/* introduction */
+#introduction{
+  position: absolute;
+  top: calc(100vh + 100px);
+  height: 2000px;
+}
+.container.introduction-2{
+  position: relative;
+  top: 760px;
+
+}
+.container.introduction-3{
+  position: relative;
+  top: 1600px;
+}
+.container.introduction-4{
+  position: relative;
+  top: 2500px;
+}
+.container.introduction-6{
+  position: relative;
+  top: 3700px;
+}
+.container.introduction-5{
+  position: relative;
+  top: 2900px;
+}
+.container.introduction-7{
+  position: relative;
+  top: 4400px;
+}
+/*chapter1*/
+
+#chapter1{
+  position: absolute;
+  top: calc(100vh + 100px);
+  height: 3900px;
+  z-index: 20;
+}
+.chapter-1-2-right{
+  position: relative;
+
+}
+.chapter1-2-image-wrapper{
+  position: absolute;
+  width: 70vw;
+  left: 15vw;
+}
+.chapter1-2-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.chapter-1-2-left{
+  position: relative;
+}
+.chapter-1-2-left img{
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.withdrawContainer1{
+  height: 1840px;
+
+}
+.chapter1-scene1{
+  position: relative;
+  top: 300px;
+}
+.chapter1-scene2{
+  position: relative;
+  top: calc(300px + 800px);
+}
+.chapter1-scene3{
+  position: relative;
+  top: calc(300px + 800px + 800px);
+}
+.chapter1-scene4{
+  position: relative;
+  top: calc(300px + 800px + 800px + 800px);
+}
+.chapter1-scene5{
+  position: relative;
+  top: calc(300px + 800px + 800px + 800px + 800px);
+}
+.chapter-1-2{
+  width: 100%;
+}
+/*chapter2*/
+#chapter2{
+  position: absolute;
+  top: calc(100vh + 100px);
+  height: 2500px;
+  z-index: 20;
+}
+.radarscene2{
+  position: relative;
+  top: -700px;
+}
+.chapter2-2{
+  position: relative;
+  top: -80px;
+}
+.chapter2-rose{
+  position: relative;
+  top: -100px;
+}
+.chapter2-rose-sub p{
+  color: rgb(0, 0, 0);
+}
+.chapter2-3{
+  position: relative;
+  top: -150px;
+}
+.chapter2-4{
+  position: relative;
+  top: -130px;
+}
+.chapter2-5{
+  position: relative;
+  top: -130px;
+}
+/*chapter2*/
+#chapter3{
+  position: absolute;
+  top: calc(100vh + 100px);
+  height: 2500px;
+  z-index: 20;
+}
+/*withdraw1*/
+.unchanged, .specified, .withdrawed:hover {
+  cursor: pointer;
+}
+#withdraw circle{
+  z-index: 50;
+}
+
+#withdraw .axis path,
+.axis line {
+  fill: none;
+  stroke: #bcbbbb;
+  shape-rendering: crispEdges;
+}
+
+
+
+
+#withdraw.x.axis line,
+.x.axis text
+ {
+  /* margin-top: -100px; */
+}
+
+#withdraw .x.axis text
+ {
+  visibility: hidden;
+}
+.owl-theme .owl-dots .owl-dot span {
+    border: none;
+    background: #636363;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #265473;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+	  background: #265473;
+	  width:20px;
+}
+
+/* -- nav -- */
+
+.owl-theme .owl-nav {
+    opacity: 0;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+.owl-theme:hover .owl-nav {
+    opacity: 1;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: #265473;
+    color: #FFF;
+  	padding: 0px;
+  	width: 100px;
+  	height: 200px;
+  	border-radius:3px;
+  	line-height: 50px;
+  	margin: 0;
+}
+
+.owl-theme .owl-prev {
+    left: 0px;
+}
+
+.owl-theme .owl-next {
+    right: 0px;
+
+}
+.owl-next span{
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.owl-prev span{
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.7);
+
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    opacity: 0.8;
+    background: rgba(120, 166, 252, 0.31);
+}
+.slide-span-1{
+  position: absolute;
+  top: -5px;
+  left: 70px;
+  font-size: 48px;
+  color: #efb43e;
+  z-index: 99;
+  font-family: "Ariel";
+  font-weight: lighter;
+}
+.slide-span-2{
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-size: 40px;
+  color: white;
+  z-index: 99;
+  font-family: "Ariel";
+  font-weight: lighter;
+}
+.slide-p{
+  position: absolute;
+  width: 70%;
+  left: 20%;
+  top: 20%;
+  color: white;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.myTooltip {
+          position: absolute;
+          z-index: 10;
+      }
+
+.myTooltip p {
+    background-color: rgba(255,255,255,0.7);
+    color: #265473;
+    border: #265473 0px solid;
+    padding: 5px 10px 5px 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+  .legend1,.legend2:hover{
+          cursor: default;
+  }
+  .withdrawContainer{
+    height: 1870px;
+
+  }
+  .withdraw{
+    position: absolute;
+    /* z-index: 999; */
+  }
+  .withdraw-title{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .legend1,.legend2 , .legendCircle1, .legendCircle2{
+    display: none;
+  }
+/*radar*/
+#radar1 div{
+    color: #265473 !important;
+}
+
+#radar2 div{
+    color: #265473 !important;
+}
+
+#radar3 div{
+    color: #265473 !important;
+}
+
+#radar4 div{
+    color: #265473 !important;
+}
+
+#radar5 div{
+    color: #265473 !important;
+}
+
+#radar6 div{
+    color: #265473 !important;
+}
+
+.radarContainer{
+  position: relative;
+}
+.radarMain{
+  /* position: relative;
+  z-index: 99999; */
+ height: 500px;
+margin-top: 20px;
+}
+.radarMain1, .radarMain2{
+  position: relative;
+}
+.radarElement{
+  width:30%;
+  margin: 1.5%;
+  float: left;
+
+}
+.radarDots{
+  width: 100%;
+  position: relative;
+  top: -600px;
+  z-index: -999;
+}
+#radar1, #radar2, #radar3, #radar4, #radar5, #radar6, svg text{
+  font-size: 16px !important;
+}
+/*rose*/
+#overcost svg{
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+#overcost path{
+  fill: none !important;
+  stroke: #265473 !important;
+  stroke-width: 2px !important;
+}
+#overcost text{
+  font-size: 16px !important;
+  fill: #265473 !important;
+  stroke: none !important;
+  /* stroke-width: 1px !important; */
+}
+/* rect */
+#rect rect{
+  cursor: pointer;
+}
+#rect .ylabel{
+    font-size: 1em;
+    font-family: "微软雅黑", "黑体", sans-serif;
+    color:black;
+}
+.recttooltip {
+position: absolute;
+z-index: 10;
+/*width: 150px;*/
+height: 10px;
+top:10px;
+left: 10px;
+}
+
+.recttooltip p {
+background-color: rgba(255,255,255,0.7);
+color: #265473;
+border: #265473 0px solid;
+padding: 5px 10px 5px 10px;
+text-align: left;
+font-size: 16px;
+}
+
 /* content */
 .content{
-  margin-top: 40px;
-  position: relative;
+  /* margin-top: 40px;
+  position: relative; */
 }
 .project-footer {
   padding: 40px 0;

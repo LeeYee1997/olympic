@@ -9,6 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css" />
+  	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css" />
+
     <link rel="stylesheet" href="css/olympic.css">
 
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
@@ -19,141 +22,429 @@
     <![endif]-->
   </head>
   <body>
+    <!-- <div class="navigation chapter" id="navigation">
+
+    </div> -->
+    <!--preloader-->
+    <div id="preloader" class="preloader">
+      <img src="image/loading.gif" alt="" style="top: 40vh; left: 40vw; width:333px;">
+      <img src="image/snow2.gif" alt="" style="top: 40vh; left: 35vw; width:100px;">
+    </div>
+    <!-- navs-->
+    <div class="nav-button" id="nav-button-1">
+      <span style="color:rgb(38, 84, 115); font-size: 25px; padding: 10px;" class="glyphicon glyphicon-list" aria-hidden="true"></span>
+    </div>
+    <div class="nav-button" id="back-to-top" style="top: 70px;">
+      <span style="color:rgb(38, 84, 115); font-size: 25px; padding: 10px;" class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+    </div>
+    <div class="the-sidebar" id="the-sidebar">
+      <div class="nav-button" id="nav-button-2">
+        <span style="color:rgb(38, 84, 115); font-size: 25px; padding: 10px;" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      </div>
+
+      <a href="#trigger-chapter1"><div class="sidebar-div" style="top: 100px;">
+        <img src="image\guide_title_1.png" style="width: 80%; margin:0 10%;" alt="">
+      </div></a>
+      <a href="#trigger-chapter2"><div class="sidebar-div" style="top: 250px;">
+        <img src="image\guide_title_2.png" style="width: 80%; margin:0 10%;" alt="">
+      </div></a>
+      <a href="#trigger-chapter3"><div class="sidebar-div" style="top: 400px;">
+        <img src="image\guide_title_3.png" style="width: 80%; margin:0 10%;" alt="">
+      </div></a>
+
+    </div>
+
     <!-- cover-->
-    <div id="cover">
-      <!-- bg-image -->
-      <div class="bg-img" style="background-image: url('image/olypiclogowithmoney.png');">
-        <div class="overlay">
 
-        </div>
-      </div>
-      <!-- wrapper -->
-      <div class="cover-wrapper">
-        <div class="container">
-        <div class="row">
-          <div class="col-md-offset-1">
-          <table id="introLine" cellspacing="0" cellpadding="20" style="width: auto; height: 9px; border: 0px; margin-bottom: 10px;">
-            <tbody>
-            <tr>
-              <td width=680 height="9" bgcolor="#07005d"></td>
 
-            </tr>
-            </tbody>
-          </table>
+    <div class="chapter-wrapper" id="cover-wrapper">
+      <div id="cover" class="chapter cover">
+        <!-- bg-image -->
+        <div class="bg-img" style="background-image: url('image/background2.jpg');">
+          <div class="overlay-chapter1" id="overlay-all">
+
+          </div>
+          <div class="title-all">
+            <img src="image/title.png" alt="">
           </div>
         </div>
-        <!-- home content -->
-        <div class="row">
-        <div class="col-md-8 col-md-offset-1">
-            <h1 class="sm-padding">用全新视角算奥运这笔账</h1>
-          <div class="home-content  sm-padding">
-            <p class="white-text">（先把前言放在这里）我们想弄明白举办奥运会到底会给主办城市带来哪些变化？北京将如何在2008年成功举办夏季奥运会的基础上筹备2022年冬奥会。纯洁的冰雪，激情的约会；北京冬奥值得期待。</p>
+        <!-- wrapper -->
+        <div class="overlay-deeper" id="overlay-intro" style="opacity: 0.8">
+
+        </div>
+      </div><!--end of cover-->
+      <!--introduction-->
+      <div id="introduction" class="chapter">
+        <div class="container introduction-1">
+          <div class="row text-wrapper">
+            <p>2001年7月13日，时任国际奥委会主席萨马兰奇公布北京成为2008年奥运会举办城市，那一刻举国欢腾。</p>
+            <p>2022年2月4日至2月20日，第24届冬奥会将在北京市和张家口市联合举办。时隔14年，北京再次将成为世界的焦点。</p>
+            <p>然而，<span class="highlight">国际上举办奥运会的积极性似乎在近几年有所衰减。</span>2024年奥运会申办过程中，布达佩斯、罗马、汉堡、波士顿<span class="highlight">纷纷退选</span>，参选城市最终只剩巴黎和洛杉矶，它们直接被国际奥委会指定为2024年和2028年奥运会举办城市。</p>
+          </div>
+        </div>
+        <div id="withdrawContainer" class="withdrawContainer">
+          <div id="withdraw" class="withdraw">
+            <img src="image/finger.gif" alt="" style="position: absolute; right: 160px;; bottom:210px; width:50px; height:50px;">
+          </div>
+          <div class="container introduction-2" id="scene2">
+            <div class="row text-wrapper blue-bg" >
+              <p class="text-justify give-me-some-margin white-text">2000年奥运会开始申办以来，申办奥运后又主动退选的城市共有19个。</p>
+            </div>
+          </div>
+          <div class="container introduction-3" id="scene3">
+            <div class="row text-wrapper blue-bg" >
+              <p class="text-justify give-me-some-margin white-text">在退选城市里，有9个城市的退选原因是“政府或人民不支持”。其中有6个国家因“消极的公投结果”而放弃。2016年9月12日，罗马放弃申办2024届奥运会，罗马市长弗吉尼亚·拉吉公开表示“并未感到遗憾”，“因无法负起财经责任而退出”。显然，受到申奥巨额经费的影响，主办奥运会的热情正在消退。</p>
+            </div>
+          </div>
+        </div>
+        <div class="container introduction-n">
+          <div class="row image-wrapper">
+            <img src="image\Roma.JPEG" alt="" style="width: 80%; margin-left: 10%; position: relative; top:-40px;">
+          </div>
+          <div class="row text-wrapper-small">
+            <p style="position: relative; top: -40px;"><b>望贵却步</b><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>意大利全国奥林匹克委员会主席乔瓦尼·马拉戈宣布已致信国际奥委会，告知“申奥竞标中止”</p>
+          </div>
+          <div class="row text-wrapper">
+            <p> 在世界各国对办奥运的高花销产生抗拒的今天，2022年北京冬奥会正在筹备过程中。这是否意味着申办奥运会对于主办城市是一项<span class="highlight">“赔本的买卖”</span>？<span class="highlight">北京这次冬奥会的收支账，我们到底应该怎么算？</span></p>
           </div>
         </div>
       </div>
-      </div><!--container-->
+    </div>
+    <!--chapter1-->
+    <div class="chapter-wrapper" id="chapter1-wrapper">
+      <div class="nav-trigger" id="trigger-chapter1">
+
       </div>
-    </div><!--end of cover-->
-    <!-- temp-content -->
-    <div class="content">
-      <div class="container">
-        <div class="row main-content">
-          <div class="col-md-2 col-md-offset-1 intro">
-            <div class="side-nav row" id="nav">
-              <ul class="nav">
-                <a href="#chapter1"><li>引子：迫于压力的退选</li></a>
-                <a href="#chapter2"><li>想象之外的奥运会收支账</li></a>
-                <a href="#chapter3"><li>真正的收支：非奥组委收支</li></a>
-                <a href="#chapter31"><li class="subtitleLi">非奥组委支出：竞标的关键？</li></a>
-                <a href="#chapter32"><li class="subtitleLi">非奥组委收入：长期收益</li></a>
-                <a href="#chapter4"><li>北京冬奥会，会是明智的投资吗？</li></a>
-              </ul>
+      <div id="chapter1-cover" class="chapter cover">
+        <div class="bg-img" style="background-image: url('image/bg_1.jpg');">
+          <div class="overlay-chapter1" id="go-with-title-1">
+          </div>
+        </div>
+        <div class="chapter-title">
+          <img src="image/big_title_1.png" alt="" class="chapter" id="title-chapter1">
+        </div>
+        <div class="overlay-deeper" id="overlay-chapter1">
+        </div>
+      </div>
+      <div class="chapter" id="chapter1">
+        <div class="container chapter-1-1">
+          <div class="row text-wrapper">
+            <p>想要计算办奥运会是否会盈利，首先要清楚可能产生哪些<span class="highlight">收入项、支出项</span></p>
+          </div>
+        </div>
+        <div id="chapter-1-2" class="withdrawContainer1">
+          <div id="chapter1-2-image-wrapper" class="chapter1-2-image-wrapper">
+            <img src="image/ocog1.png" alt="" id="chapter1-img1" class="chapter1-2-image" style="width:40vw; left:15.2vw; display: none">
+            <img src="image/ocog2.png" alt="" id="chapter1-img2" class="chapter1-2-image " style=" display: none">
+            <img src="image/rev-exp.svg" alt="" id="chapter1-img3" class="chapter1-2-image" style="top: 10vh; display: none">
+            <img src="image/ocog4.png" alt="" id="chapter1-img4" class="chapter1-2-image" style="display: none">
+            <img src="image/ocog5.png" alt="" id="chapter1-img5" class="chapter1-2-image" style="width: 60vw; left: 5vw; top: 10vh; display: none">
+          </div>
+          <div class="container introduction-2">
+            <div class="row text-wrapper blue-bg" id="chapter1-scene1" style="position: relative; top: -200px;">
+              <p class="text-justify give-me-some-margin white-text">从获得举办资格到奥运会正式开幕，举办国需要准备多年。为此，举办国成立<span class="highlight">奥运会组织委员会（Organizing Committees for the Olympic Game）</span>，简称“国家奥组委”（OCOG）。它是承办该届奥运会的组织机构。<span class="highlight">负责赛事的组织、运营和管理。</span></p>
             </div>
           </div>
-          <div class="col-md-6 col-md-offset-1  maintext">
-            <div class="row chapter1" id="chapter1">
-              <blockquote>
-                <h2>引子：迫于压力的退选</h2>
-              </blockquote>
-              <p>2022年北京冬奥会的脚步临近，冬奥会的全面筹备工作正在推进，继2008年北京奥运会后，时隔24年，北京又将成为世界的焦点。</p>
-              <p>但当北京在紧锣密鼓地从基础设施、运动员梯队等诸多方面进行准备时，面对2026年冬奥会主办权的竞标，意大利都灵市、日本札幌市、瑞士锡永市、奥地利格拉茨市纷纷因为财政预算不足、自然灾害等原因退出竞标行列。此前波兰克拉科夫市、乌克兰利沃夫市、挪威奥斯陆市也因为国内政局动荡、财政支持不足退出2022年冬奥会竞标。</p>
-              <p>事实上，近年来很多国家在担心奥运会的投资无法带来可观的收益。每届奥运会申办的国家越来越少，申办后的退选率也有所上升。2024年，进入主办城市终审名单的四个国家相继退选，只剩下法国巴黎和美国洛杉矶。国际奥委会直接指定，由法国巴黎举办2024年奥运会，美国洛杉矶举办2028年奥运会。</p>
-              <div class="row infographic1">
-                <img style="width: 100%" src="image\section1.jpg" alt="">
+          <div class="container introduction-3" >
+            <div class="row text-wrapper blue-bg" id="chapter1-scene2" style="position: relative; top: -250px;">
+              <p class="text-justify give-me-some-margin white-text">因此，国家奥组委产生的花销（以下简称<span class="highlight">“奥组委支出”</span>）大多<span class="highlight">与办赛直接相关</span>。而奥运会的所有投资及产生的收入（以下简称“奥组委收入”），也全部归入国家奥组委的账目下，由国家奥组委核算。</p>
+            </div>
+          </div>
+          <div class="container introduction-4" >
+            <div class="row text-wrapper blue-bg"  style="position: relative; top: -300px;">
+              <p class="text-justify give-me-some-margin white-text">历年主办城市奥运收支报告显示，<span class="highlight">奥组委支出和奥组委收入基本平衡。</p>
+            </div>
+          </div>
+          <div class="container introduction-5" >
+            <div class="row text-wrapper blue-bg" id="chapter1-scene3" style="position: relative; top: -300px;">
+              <p class="text-justify give-me-some-margin white-text">然而事情并不简单。如果真的只有这一份账单的话，各国会对办奥运的巨额经费“敬而远之”吗？</p>
+            </div>
+          </div>
+          <div class="container introduction-6" >
+            <div class="row text-wrapper blue-bg" id="chapter1-scene4" style="position: relative; top: -300px;">
+              <p class="text-justify give-me-some-margin white-text">事实上，想办好全世界规模最大的体育盛会，只花办比赛的钱远远不够。为了让奥运会亮丽、完美地呈现在世人面前，当地政府和社会人士会投入一笔不小数目的资金来完善城市的基础设施，<span class="highlight">这部分投资叫做非国家奥组委支出（Non-OCOG）。</p>
+            </div>
+          </div>
+          <div class="container introduction-7" >
+            <div class="row text-wrapper blue-bg" style="position: relative; top: -300px;">
+              <p class="text-justify give-me-some-margin white-text"><span class="highlight">这份开支（简称“非奥组委支出”）要远远多过奥组委支出。</span>奥组委支出和非奥组委支出之和，才是办一届奥运会全部的支出。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--chapter2-->
+    <div class="chapter-wrapper" id="chapter2-wrapper">
+      <div class="nav-trigger" id="trigger-chapter2">
+
+      </div>
+      <div id="chapter2-cover" class="chapter cover">
+        <div class="bg-img" style="background-image: url('image/bg_2.jpg');">
+          <div class="overlay-chapter1" id = "go-with-title-2">
+          </div>
+        </div>
+        <div class="chapter-title">
+          <img src="image/big_title_2.png" alt="" class="chapter" id="title-chapter2">
+        </div>
+        <div class="overlay-deeper" id="overlay-chapter2">
+        </div>
+      </div>
+      <div class="chapter" id="chapter2">
+        <div class="container chapter2-1">
+          <div class="row text-wrapper">
+            <p>历届申奥报告表明，奥组委预算一般较少，但申办的城市往往会在“非奥组委预算”一栏充分发挥自己的想象力。</p>
+            <p>比对历年申奥各国提交的预算数据，<span class="highlight">奥运会的竞标机制类似拍卖</span>。<span class="highlight">能否提出较高的非奥组委支出，</span>是国际奥委会考量的重要因素之一。</p>
+          </div>
+        </div>
+        <div class="container" id="getWidthContainer">
+          <div  id="radarMain" class="radarMain">
+            <h3>近六届奥运会竞选城市申报预算图</h3>
+            <img src="image/radarlegend1.png" id="radarlegend1" alt="" style="position: absolute; left: 88px; bottom:256.4px; width:95px; height:auto; z-index: 999999; display:none;">
+            <img src="image/radarlegend2.png" id="radarlegend2" alt="" style="position: absolute; left: 190px; bottom:340px; width:150px; height:auto; z-index: 999999; display:none;">
+            <img src="image/radarlegend3.png" id="radarlegend3" alt="" style="position: absolute; left: 190px; bottom:370px; width:170px; height:auto; z-index: 999999; display:none;">
+            <img src="image/finger.gif" alt="" style="position: absolute; right: 110px; bottom:210px; width:50px; height:50px; z-index: 999999;">
+            <div class="row radarMain1" id="radarMain1">
+              <div id="radar1" style="height:250px;" class="col-md-4 radarElement" ></div>
+              <div id="radar2" style="height:250px;"class="col-md-4 radarElement"></div>
+              <div id="radar3" style="height:250px;"class="col-md-4 radarElement"></div>
+            </div>
+              <!-- <div id="title2"></div> -->
+              <div class="row radarMain2" id="radarMain2">
+                <div id="radar4" style="height:250px;" class="col-md-4 radarElement"></div>
+                <div id="radar5" style="height:250px;" class="col-md-4 radarElement"></div>
+                <div id="radar6" style="height:250px;" class="col-md-4 radarElement"></div>
               </div>
-              <p>退选国家放弃竞标的原因是什么？为什么申办奥运会的国家越来越少？世界各国对办奥运热情仿佛消退，这是否意味着办奥运其实并不是一项好的投资？</p>
-              <p> 2022年北京奥运正在筹备中，在很多声音对办奥运的投资产生质疑的今天，我们想要讨论：办奥运是不是一项合理的投资。</p>
-
+            <div class="radarDots" id="radarDots">
             </div>
-            <div class="row chapter2" id="chapter2">
-              <blockquote>
-                <h2>想象之外的奥运会收支账</h2>
-              </blockquote>
-                <p>很多人对于奥运会支出和收入的相关概念并不清晰。首先要明确，当地奥组委和举办国政府的财政是分开的。在计算奥运会支出的时候，人们会算上奥组委支出和非奥组委支出（非奥组委支出包括政府支出和社会资本支出），但在计算奥运会收入的时候，却往往只算上奥组委收入。由于大部分奥运会的当地奥组委基本做到了账目上收支平衡，用这种计算方式计算出的奥运会收支状况必然是赔钱的。</p>
+          </div>
+          <div class="row text-wrapper blue-bg radarscene2" id="radarscene2">
+            <p class="text-justify give-me-some-margin white-text">在过去的6届奥运会中，除了2010年温哥华冬奥会，其余5届都是填报预算最高的城市在最终的投票环节脱颖而出。</p>
+          </div>
 
-                <div class="row infographic2">
-                  <img src="image\smallMultiples.png" alt="">
-                </div>
+        </div>
+        <div class="container chapter2-2">
+          <div class="row text-wrapper">
+            <p>因此，各城市申办奥运会时会倾向于给出很高的报价。就像拍卖会上，竞标者为了赢得竞标，可能会支付超出拍卖品本身价值的费用。经济学里把这种现象称为<span class="highlight">“胜者的诅咒”</span>。</p>
+            <p>而事实上，2000年以来，所有主办国家的非奥组委支出都超过了原有预算。也就是说，高昂的预算过后，绝大多数奥运会举办城市还会迎来<span class="highlight">更大规模的超支。</span></p>
+          </div>
+          <h3 style="position: relative; left: 200px;">各届奥运超支比例图</h3>
+          <div class="row chart-wrapper chapter2-rose" id="overcost">
+
+          </div>
+          <div class="row text-wrapper-small chapter2-rose-sub">
+            <p style="position: relative; top: -100px;"><b>超支严重</b><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>2014索契冬奥会更是因为其内部的贪腐问题，超支比例达到178%</p>
+          </div>
+        </div>
+        <div class="container chapter2-3" style="width: 100%;">
+          <div class="row text-wrapper">
+            <p>由于办奥运会产生的巨大开支，一些城市在奥运会后背上了沉重的负担，甚至陷入经济萧条。里约热内卢奥组委在举办奥运会期间产生的债务增加至2016年当年的三倍以上。2004年雅典奥运会之后，希腊政府也陷入了巨额负债。</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6" style="overflow:hidden; height:480px;">
+              <img src="image/rio.jpg" alt="">
             </div>
-
-            <div class="row chapter3" id="chapter3">
-              <blockquote>
-                <h2>真正的收支：非奥组委收支</h2>
-              </blockquote>
-              <div class="row chapter31" id="chapter31">
-                <h3>非奥组委支出：竞标的关键？</h3>
-                <p>在北京冬奥会之前，奥运会的竞标类似一种拍卖，总是提出预算最高的申办城市获得举办权，而且预算中政府支出预算的比重远大于奥组委支出预算。所以在这种条件下，各城市在申办奥运会时往往会提出很高的政府支出预算，遭遇“胜者的诅咒”。</p>
-
-                <div class="row infographic3">
-                  <img src="image\section3.png" alt="">
-                </div>
-                <p>提出了很高的政府支出预算之后，随之而来的便是很高的支出。为了获得举办权，参选国给出最贵、最华丽的建设方案／由于工程师从未见过的浩大工程量产生的诸多问题，雅典奥运会场馆2000年才正式动工。延期的工程使得场馆的花费激增，也直接导致了雅典奥运会的超支。</p>
-                <div class="row infographic4">
-                  <img src="image\infographic4.png" alt="">
-                </div>
-                <p>而且，实际上，几乎所有办奥运的非奥组委支出比预算要高得多。2000年以来，几乎所有的主办国家非奥组委最终花销都会超过原有的预算，2014索契冬奥会更是超支比例达到了178%。</p>
-                <div class="row infographic5">
-                  <img src="image\section5.png" alt="">
-                </div>
-                <p>由于办奥运会产生的巨大开支，一些城市在奥运会后背上了沉重的负担，甚至陷入经济萧条。（比如里约和雅典）</p>
-                <p>可喜可贺的是，北京冬奥会不必靠高预算来争夺举办权，也不必在实际准备的过程中挥金如土，因为国际奥委会通过了“2020倡议”，改“申办”为“邀请”，倡议最大化利用已有设施和建设临时场馆。</p>
-                <div class="row infographic6">
-                  <img src="image\infographic6.jpg" alt="">
-                </div>
-              </div>
-              <div class="row chapter32">
-                <h3>非奥组委收入：长期收益</h3>
-                  <p>说完了支出，我们再来看收益。由于奥运会的收入基本用来和奥组委的支出相抵了，政府支出又主要投入了基础设施建设，因此，奥运会的时机收入主要源于收益自基础设施的长期收益。</p>
-                  <p>1、首先，为了奥运会建造的场馆可以后续利用。</p>
-                  <div class="row infographic7">
-                    <img src="image\infographic7.jpg" alt="">
-                  </div>
-                  <p>2、其次，筹办奥运会的工程促进了城市的基础设施建设。</p>
-                  <p>如：索契冬奥会发展郊区的数据（文字叙述）</p>
-                  <p>3、再次，奥运会可以直接促进产业发展。</p>
-                  <p>如：盐湖城冬奥会</p>
-                  <p>北京冬奥会的举办便可以为北京、张家口和延庆带来上述收益。</p>
-                  <p>1、首先，这些滑雪场和冰球馆等可以为大众提供运动场地。</p>
-                  <p>2、其次，在筹办北京冬奥会的过程中，北京周边的铁路网得到了完善。</p>
-                  <div class="row infographic8">
-                    <img src="image\section8.jpg" alt="">
-                  </div>
-                  <p>3、再次，北京冬奥会的举办，意味着北京成为世界上第一个既举办过夏奥会又举办过冬奥会的城市，对于我国具有重大而深远的意义，是我国飞速发展的过程中里程碑一样的见证。</p>
-
-              </div>
+            <div class="col-md-6" style="overflow:hidden; height:480px;">
+              <img src="image/athens.jpg" alt="">
             </div>
-            <div class="row chapter4" id="chapter4">
-              <blockquote>
-                <h2>北京冬奥会，会是明智的投资吗？</h2>
-              </blockquote>
-              <p>(采访略)</p>
+          <div class="row text-wrapper-small">
+            <p style="position: relative; top: 30px;"><b>场馆废弃</b><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>里约奥运会后废弃的游泳馆（左）与雅典奥运会废弃的棒球场（右）</p>
+          </div>
+          <!-- <hr style="width: 50%; border-top-color:rgb(142, 142, 142); position: relative; top: 50px;"> -->
+          </div>
 
+        </div>
+        <div class="container chapter2-4">
+          <div class="row text-wrapper">
+            <p>然而，2022北京冬奥会刚好与“胜者的诅咒”擦肩而过。</p>
+            <p>2014年12月，国际奥委会通过了<span class="highlight">奥运会改革方案《奥林匹克2020议程》</span>，改变了奥运会的举办风格和申请模式。方案核心内容是<span class="highlight">降低奥运会申办成本，注重可持续发展和人文关怀。</span>北京体育大学邱招义教授认为：“曾经奥组委的各项事宜都是竞标，《2020议程》让办奥运从一开始就是干净的、节俭的。”</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6" style="overflow:hidden; height:310px;">
+              <img src="image/olympic2020.png" alt="">
             </div>
-          </div><!--maintext-->
+            <div class="col-md-6" style="overflow:hidden; height:310px;">
+              <img src="image/Beijing&Almaty.jpg" alt="">
+            </div>
+          </div>
+          <div class="row text-wrapper-small">
+            <p style="position: relative; top: 30px;"><b>左</b><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>国际奥委会《奥林匹克2020议程》
+              <br><b>右</b><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>北京申办2022年冬奥会，唯一的竞争对手是哈萨克斯坦的阿拉木图
+            </p>
+          </div>
+          <div class="row text-wrapper" style="position: relative; top: 30px;">
+            <p>在北京和阿拉木图的2022冬奥会申办文件中，已经看不到非奥组委支出（Non-OCOG Cost）一项的具体数据。这也就说明北京不用再提供一个高不可及的预算来赢得举办权，也不必在实际准备过程中挥金如土。国际奥委会主席巴赫曾坦言：“2022北京冬奥会将会是完全受益于《奥林匹克2020议程》的一届冬奥会。”而作为<span class="highlight">第二次举办奥运会的北京，也将充分利用2008年奥运会留下的得天独厚的奥运遗产。</span></p>
+          </div>
+          <div class="row chart-wrapper" id="rect" style="width: 1100px; height:550px; position:relative; top: 40px; left:150px;">
+          </div>
+        </div>
+        <div class="container chapter2-5" style="position:relative; top: -250px;">
+          <div class="row text-wrapper">
+            <p>不过，故事讲到这里，“奥运账单”上的问题并没有被解决：国家奥组委可以做到基本收支平衡，而非奥组委支出却没有相对应的直接收益可以相抵，办奥运会在账目上仍旧是赔钱的。</p>
+            <p>然而，真的是这样吗？</p>
+          </div>
         </div>
 
       </div>
     </div>
+    <!--chapter3-->
+    <div class="chapter-wrapper" id="chapter3-wrapper">
+      <div class="nav-trigger" id="trigger-chapter3">
+
+      </div>
+      <div id="chapter3-cover" class="chapter cover">
+        <div class="bg-img" style="background-image: url('image/bg_3.jpg');">
+          <div class="overlay-chapter1" id="go-with-title-3">
+          </div>
+        </div>
+        <div class="chapter-title">
+          <img src="image/big_title_3.png" alt="" class="chapter" id="title-chapter3">
+        </div>
+        <div class="overlay-deeper" id="overlay-chapter3">
+        </div>
+      </div>
+      <div class="chapter" id="chapter3">
+        <div class="container chapter3-1">
+          <div class="row text-wrapper">
+            <p>国家政府和各界资本斥巨资打造起来的“奥运城市”，不会在奥运会闭幕的一瞬间就失去光芒。<span class="highlight">更加完善的基础设施</span>对整座城市，乃至整个国家带来的效益是长远的。这部分收益在统计上是隐形的，但绝非为零，甚至可以产生<span class="highlight">巨大的长期收益</span>，对<span class="highlight">城市的定位和发展</span>起到了很大的<span class="highlight">助推</span>作用。</p>
+            <p>直接来看，奥运会为一座城市留下了丰厚的<span class="highlight">“奥运遗产”</span>。举办奥运的场馆可以被后续利用。从历届奥运会场馆复用情况来看，绝大部分的场馆在奥运会结束之后没有被废弃，而是各自被赋予了新的用途。</p>
+          </div>
+          <h3 style="position: relative; left: 200px;">奥运之后的场地利用情况</h3>
+          <div class="row chart-wrapper chapter3-sankey" id="sankey" style="width: 1200px; position: relative; left: 40px;">
+
+          </div>
+          <div class="row text-wrapper-small">
+            <p style="position: relative; top: -20px;"><b>奥运之后</b><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>专业比赛与群众运动共同使用奥运场馆</p>
+          </div>
+          <div class="row text-wrapper">
+            <p>而奥运会对于一座城市的影响还可以更长远。</p>
+          </div>
+        </div>
+        <div class="container chapter3-2" style="width: 90%;">
+          <div class="row">
+            <div class="col-md-8">
+              <img src="image/sochirailway.jpg" alt="">
+            </div>
+            <div class="col-md-4" style="height: 100%;">
+              <div class="row text-wrapper-small" style="width: 90%; position: relative; top: 150px;">
+                <p><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span><b>一列火车驶过索契</b>
+                  <br><br><span class="highlight">奥运会带来的基础设施建设使得亟待复兴的索契重获新生。</span>这座以温泉和海风闻名的城市因奥运会新铺设了超过367公里的道路和桥梁、超过200公里的的铁路以及967400平方米路面和人行道，机场也得以扩建6.5万平方米。这座百年前就文明遐迩的度假城市因苏联解体而落寞，却因冬奥会而复兴。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row text-wrapper-small" style="width: 90%;">
+                <p style="position: relative; top: 150px; text-align: right"><b>盐湖城Solitude滑雪度假村</b><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                  <br></p>
+                <p style="position: relative; top: 150px;">得天独厚的地理优势使得盐湖城附近拥有大量的滑雪胜地，而<span class="highlight">冬奥会的举办使得盐湖城的旅游业大大发展了</span>。自2002年冬季奥运会以来，滑雪胜地的游客数量增加了30%。盐湖城当地的餐饮业、汽车租赁业等服务性行业收益额也在增长；截止2005年，盐湖城服务性行业收益每年提高近10%。如今的盐湖城也以“滑雪城”自称。
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <img src="image/SaltLakeCity.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <img src="image/torino.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+              <div class="row text-wrapper-small" style="width: 90%;">
+                <p style="position: relative; top: 200px;"><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span><b>都灵户外汽车展</b>
+                  <br><br>与意大利的潇洒气质不同，有着“意大利汽车之都”的都灵被戏称为“菲亚特市”，菲亚特即意大利体量最大的汽车品牌。<span class="highlight">冬奥会的举办加快了都灵重塑形象的步伐。</span>都灵大学社会学教授Sergio Scamuzzi表示奥运会为都灵创造了新的国际形象，“人们知道都灵将会是由于地图，而非菲亚特”。
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="container chapter3-3">
+          <div class="row text-wrapper">
+            <p>北京冬奥会也给它的举办地带来了类似的收益。</p>
+            <p><b>从贫困县到世界级冰雪小城</b></p>
+            <p>盐湖城冬奥会的举办盘活了一项产业，2022冬奥会的筹办<span class="highlight">点亮了一座城市。</span>崇礼是2022冬奥会雪上项目的主赛场，形成了以太子城冰雪小镇为中心的<span class="highlight">雪场集群</span>。此前，崇礼县是国家级贫困县，不可再生金属矿产几乎是主要经济来源。而现在，<span class="highlight">以滑雪为龙头的生态旅游业成为崇礼的“绿色矿产”。</span>据崇礼区冬奥办罗宝龙主任介绍，习总书记曾来视察，当时就提到了要崇礼“努力交出冬奥会筹办和本地发展两份优异的答卷”。</p>
+          </div>
+        </div>
+        <div class="container chapter3-4" style="width: 60%;">
+          <div class="row">
+            <div class="owl-carousel owl-theme" id="about-slider">
+              <div class="the-theme">
+                <img src="image/chongli1.jpg" alt="">
+                <div style="position: absolute; left: 0; bottom: 0; background-color: rgba(85, 85, 85, 0.8); width:100%; height:100px;">
+                  <span class="slide-span-1">1</span><span class="slide-span-2">/ 7</span>
+                  <p class="slide-p">一家三口在崇礼太舞雪场。兴趣要从小培养，随着国家对冰雪运动的推广，很多家长开始从小培养孩子参加滑雪、滑冰等运动，这些孩子也成为了我国专业冰雪运动的预备力量。</p>
+                </div>
+              </div>
+              <div class="the-theme">
+                <img src="image/chongli2.jpg" alt="">
+                <div style="position: absolute; left: 0; bottom: 0; background-color: rgba(85, 85, 85, 0.8); width:100%; height:100px;">
+                  <span class="slide-span-1">2</span><span class="slide-span-2">/ 7</span>
+                  <p class="slide-p">两名建筑工人路过崇礼工地里的广告牌，广告牌用富有冰雪特色的方式呈现着社会主义核心价值观。为了筹办奥运会，崇礼开展了多个建设项目，工人们的辛勤劳动一点一滴造就了宏伟的奥运场馆。</p>
+                </div>
+              </div>
+              <div class="the-theme">
+                <img src="image/chongli3.jpg" alt="">
+                <div style="position: absolute; left: 0; bottom: 0; background-color: rgba(85, 85, 85, 0.8); width:100%; height:100px;">
+                  <span class="slide-span-1">3</span><span class="slide-span-2">/ 7</span>
+                  <p class="slide-p">崇礼冬奥场馆建筑工地，工地前有标语“绿色人文科技 打造特色小镇”，体现了崇礼的发展方针。崇礼的滑雪产业原本就是当地特色，申奥成功以来，崇礼的这一特色得到了进一步彰显，发展模式也更加环保。</p>
+                </div>
+              </div>
+              <div class="the-theme">
+                <img src="image/chongli4.jpg" alt="">
+                <div style="position: absolute; left: 0; bottom: 0; background-color: rgba(85, 85, 85, 0.8); width:100%; height:100px;">
+                  <span class="slide-span-1">4</span><span class="slide-span-2">/ 7</span>
+                  <p class="slide-p">崇礼在建的高山跳台滑雪场馆，由于外形与如意相似，称为“雪如意”。这是北京冬奥会将冰雪运动与中国古典文化相结合的一个典例，类似的还有冬季两项滑雪场馆“冰玉环”。</p>
+                </div>
+              </div>
+              <div class="the-theme">
+                <img src="image/chongli5.png" alt="">
+                <div style="position: absolute; left: 0; bottom: 0; background-color: rgba(85, 85, 85, 0.8); width:100%; height:100px;">
+                  <span class="slide-span-1">5</span><span class="slide-span-2">/ 7</span>
+                  <p class="slide-p">崇礼马路边2022北京冬奥会的标志。在崇礼街头，冬奥会和冰雪的元素随处可见，如外墙漆上了冰雪图画的幼儿园和桥边各类冬奥会项目的简笔画，体现了崇礼全区对冬奥准备工作的重视。</p>
+                </div>
+              </div>
+              <div class="the-theme">
+                <img src="image/chongli6.jpg" alt="">
+                <div style="position: absolute; left: 0; bottom: 0; background-color: rgba(85, 85, 85, 0.8); width:100%; height:100px;">
+                  <span class="slide-span-1">6</span><span class="slide-span-2">/ 7</span>
+                  <p class="slide-p">崇礼太舞雪场门票的充电桩，采用风力发电方式。“绿色”是崇礼的一项发展特色，也是2022北京冬奥会的一项特色。通过利用新能源、使用环保材料等技术手段，崇礼正和2022北京冬奥会一起助力绿色发展模式的推广。</p>
+                </div>
+              </div>
+              <div class="the-theme">
+                <img src="image/chongli7.jpg" alt="">
+                <div style="position: absolute; left: 0; bottom: 0; background-color: rgba(85, 85, 85, 0.8); width:100%; height:100px;">
+                  <span class="slide-span-1">7</span><span class="slide-span-2">/ 7</span>
+                  <p class="slide-p">崇礼一家雪具店门前放置的雪具。随着冰雪运动在崇礼的蓬勃发展，各种雪具店在崇礼的密度也达到了新高峰。这是冰雪运动带动崇礼的就业、从而促进经济增长的又一种方式。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container chapter3-5">
+          <div class="row text-wrapper">
+            <p><b>北京周边的“一小时交通圈”</b></p>
+            <p>11项冬奥工程配套基础设施的建设带动了北京及其周边的联动发展。从北京城区到延庆的路上多山，兴延高速则通过五条隧道让市民得以“直线”通行，单程出行时间从1小时6分钟缩减为28.98分钟。京张高铁、延崇高速、京蔚高速等公路和铁路逐步建成，北京到西北方向张家口的交通全线进入<span class="highlight">一小时交通圈，异地通勤也成为可能。</span>另外，崇礼区冬奥办罗主任还提到了便利的交通对崇礼旅游休闲体育产业的促进作用，“（一小时交通圈）对来旅游的人来说更方便了，<span class="highlight">来旅游的人就可能更多。</span>”</p>
+          </div>
+          <div class="row chart-wrapper" style="width: 660px;">
+            <img src="image/railway.png" alt="">
+          </div>
+          <div class="row text-wrapper-small">
+            <p style="position: relative; top: 30px;"><b>奥运基建</b><span style="color:rgb(38, 129, 228);" class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>冬奥沿线的“一小时交通圈”</p>
+          </div>
+        </div>
+        <div class="container chapter3-6">
+          <div class="row text-wrapper">
+            <p><br><b>在大众体验中提升国际形象</b></p>
+            <p>北京是全球唯一同时举办过夏季奥运会、冬季奥运会的城市。作为国际雪联自由式滑雪国际级裁判A级裁判，邱招义教授说：“中国代表队2022冬奥会的目标是所有大项都有人参加，这是我国冰雪运动的突破。”</p>
+            <p>2016年，习近平总书记在会见第31届奥运会中国体育代表团时表示，“体育是社会发展和人类进步的重要标志，是综合国力和社会文明程度的重要体现。”<span class="highlight">体育是国家文明程度的衡量标尺之一，</span>其中小众的、尖端的运动冬季运动一定程度上是社会繁荣后百姓才会产生的需求。“3亿人上冰雪”拉近了大众与冰雪运动的距离。<span class="highlight">“奥运会重要的不是胜利，而是参与”</span>，这是“奥林匹克之父”皮埃尔·德·顾拜旦（Le baron Pierre De Coubertin）对奥林匹克主义（Olympicism）的解读。“目前我国在冬季运动方面还处于较为初级的阶段，要通过办冬奥会来激发一下大众的热情。”邱招义教授强调了体验与参与的意义。</p>
+            <p>2022北京冬奥会的投入到底值不值？邱招义教授认为：<span class="highlight">“举办冬奥会肯定是明智的，别的国家不办也有道理。”</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- footer -->
     <footer class="project-footer">
       <p>Made by our team.</p>
@@ -163,10 +454,28 @@
 
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+    <!-- d3线上lib -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.1.0/d3.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js\main.js">
+    <!-- 引入 ECharts 文件 -->
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <!-- scrollmagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
 
-    </script>
+    <script type="text/javascript" src="js\main.js"></script>
+    <script type="text/javascript" src="js/withdraw.js"></script>
+    <script type="text/javascript" src="js/radar.js"></script>
+    <script type="text/javascript" src="js/rose.js"></script>
+    <script type="text/javascript" src="js/sankey.js"></script>
+    <script type="text/javascript" src="js/rect.js"></script>
+
+
+
   </body>
 </html>
