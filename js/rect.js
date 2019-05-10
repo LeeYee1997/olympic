@@ -25,7 +25,7 @@ var width1 = document.all.rect.offsetWidth;;
                 .attr("stroke-width",0.7)
 
         svg1.append("text")
-                .attr("class", "ylabel")
+                .attr("class", "withdraw-title")
                 .attr("x", xScale1(14))
                 .attr("y", yScale1(93))
                 .style("text-anchor", "middle")
@@ -38,12 +38,14 @@ var width1 = document.all.rect.offsetWidth;;
           .style("text-anchor", "left")
           .attr("dy", 0)
           .style("fill", "rgb(131, 131, 131)")
+          .style("font-size", "14px")
           .text("数据来源：");
           svg1.append("text")
             .attr("transform", "translate(" + xScale1(40)+ " ," + yScale1(35) + ")")
             .style("text-anchor", "left")
             .attr("dy", 0)
             .style("fill", "rgb(131, 131, 131)")
+            .style("font-size", "14px")
             .text("《中国冬季奥运会发展报告（2017）》 社会科学文献出版社");
 
         svg1.append("text")

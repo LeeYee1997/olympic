@@ -266,6 +266,7 @@ var yScale1 = d3.scaleLinear().range([ height1, 0 ]);
  .attr("cx", xScale1(50))
  .attr("cy", yScale1(86))
  .attr("r", 10)
+ .attr("opacity", "0")
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
 
@@ -292,6 +293,8 @@ var yScale2 = d3.scaleLinear().range([ height2, 0 ]);
  .attr("cx", xScale2(48))
  .attr("cy", yScale2(49))
  .attr("r", 10)
+ .attr("opacity", "0")
+
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
 
@@ -318,6 +321,8 @@ var yScale3 = d3.scaleLinear().range([ height3, 0 ]);
  .attr("cx", xScale3(50))
  .attr("cy", yScale3(90))
  .attr("r", 10)
+ .attr("opacity", "0")
+
  .attr("fill","rgba(238,182,53,0.9)")
  .attr("class", "radarCircles");
 
@@ -345,6 +350,8 @@ var yScale4 = d3.scaleLinear().range([ height4, 0 ]);
  .attr("cx", xScale4(50))
  .attr("cy", yScale4(72))
  .attr("r", 10)
+ .attr("opacity", "0")
+
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
 
@@ -371,6 +378,8 @@ var yScale5 = d3.scaleLinear().range([ height5, 0 ]);
  .attr("cx", xScale4(50))
  .attr("cy", yScale4(78))
  .attr("r", 10)
+ .attr("opacity", "0")
+
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
 
@@ -397,6 +406,8 @@ var yScale6 = d3.scaleLinear().range([ height6, 0 ]);
  .attr("cx", xScale6(50))
  .attr("cy", yScale6(66))
  .attr("r", 10)
+ .attr("opacity", "0")
+
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
 

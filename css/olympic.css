@@ -12,6 +12,43 @@
   position: absolute;
   height: 100px;
 }
+.mobile-only{
+  display: none;
+}
+.pc-only{
+  display: block;
+}
+.mobile-wall{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #265473;
+  z-index: 9999997;
+
+}
+@media (max-width:640px) {
+  html, body{
+    overflow: hidden;
+  }
+  .mobile-only{
+    display: block;
+  }
+  .pc-only{
+    display: none;
+  }
+  .mobile-wall-alert{
+    position: fixed;
+    left: 5%;
+    top: 25%;
+    width: 90%;
+    font-size: 26px;
+    color: white;
+    z-index: 9999998;
+    text-align: justify;
+  }
+}
 body {
     font-family: "Microsoft YaHei";
     font-size: 16px;
@@ -45,7 +82,9 @@ h1, h2, h3, h4, h5, h6 {
 .sm-padding{
   padding: 20px;
 }
-
+.white-highlight{
+  background-color: rgba(255, 255, 255, 0.4);
+}
 
 ul{
     margin: 0;
@@ -98,6 +137,7 @@ a:hover{
 }
 .data-source{
   font-weight: lighter;
+  font-size: 12px;
   color: rgb(131, 131, 131);
 }
 .active{
@@ -122,7 +162,7 @@ a:hover{
 }
 .row.image-wrapper{
   margin: 0 auto;
-  width: 660px;
+  width: 640px;
   overflow: hidden;
 }
 .row.text-wrapper{
@@ -162,7 +202,7 @@ a:hover{
   right: 0;
   height: 100%;
   width: 300px;
-  background-color: rgba(38,84,115,0.2);
+  background-color: rgba(45,70,120,0.4);
   z-index: 999998;
   display: none;
 }
@@ -173,7 +213,7 @@ a:hover{
   cursor: pointer;
 }
 .sidebar-div:hover{
-  background-color: rgba(38,84,115,0.4)
+  background-color: rgba(40,75,120,0.5)
 }
 .nav-button{
   position: fixed;
@@ -213,9 +253,9 @@ a:hover{
 }
 .chapter-title{
   position: absolute;
-  top: 24%;
-  left: 5%;
-  width: 90%;
+  top: 28%;
+  left: 15%;
+  width: 70%;
 }
 .bg-img {
     position: absolute;
@@ -387,7 +427,7 @@ a:hover{
 #chapter3{
   position: absolute;
   top: calc(100vh + 100px);
-  height: 2500px;
+  height: auto;
   z-index: 20;
 }
 /*withdraw1*/
@@ -539,7 +579,7 @@ a:hover{
     /* z-index: 999; */
   }
   .withdraw-title{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
   }
   .legend1,.legend2 , .legendCircle1, .legendCircle2{
@@ -594,7 +634,12 @@ margin-top: 20px;
   top: -600px;
   z-index: -999;
 }
-#radar1, #radar2, #radar3, #radar4, #radar5, #radar6, svg text{
+#radar1 svg text,
+#radar2 svg text,
+#radar3 svg text,
+#radar4 svg text,
+#radar5 svg text,
+#radar6 svg text{
   font-size: 16px !important;
 }
 /*rose*/
@@ -648,6 +693,12 @@ font-size: 16px;
   position: relative; */
 }
 .project-footer {
+  /* position: absolute;
+  height: 100px;
+  width: 100%;
+  z-index: 999999;
+  bottom: 0; */
+  font-size: 14px;
   padding: 20px 0;
   color: #fff;
   text-align: center;

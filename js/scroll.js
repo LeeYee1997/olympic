@@ -127,7 +127,7 @@ $(function(){
   var setPinCover = new ScrollMagic.Scene({
     triggerElement: "#cover",
     triggerHook: 0,
-    duration: '2900',
+    duration: '2950',
   })
   .setPin("#cover")
   .addTo(controller);
@@ -137,18 +137,18 @@ $(function(){
     triggerHook: 0.95,
   })
   .on("enter", function(){
-    $("#overlay-intro").fadeIn(1000);
-    $(".title-all").fadeOut(1000);
-    $("#overlay-all").fadeOut(1000);
-    $(".navigation").fadeIn(1000);
+    $("#overlay-intro").fadeIn(500);
+    $(".title-all").fadeOut(500);
+    $("#overlay-all").fadeOut(500);
+    $(".navigation").fadeIn(500);
 
   })
 
   .on("leave", function(){
-    $(".overlay-deeper").fadeOut(1000);
-    $(".title-all").fadeIn(1000);
-    $("#overlay-all").fadeIn(1000);
-    $(".navigation").fadeOut(1000);
+    $(".overlay-deeper").fadeOut(500);
+    $(".title-all").fadeIn(500);
+    $("#overlay-all").fadeIn(500);
+    $(".navigation").fadeOut(500);
 
   })
   .addTo(controller);
@@ -156,7 +156,7 @@ $(function(){
   var setPinChapter1 = new ScrollMagic.Scene({
     triggerElement: "#chapter1-cover",
     triggerHook: 0,
-    duration: '5300',//真正控制每个章节的高度
+    duration: '5900',//真正控制每个章节的高度
   })
   .setPin("#chapter1-cover")
   .on("enter", function(){
@@ -171,18 +171,18 @@ $(function(){
 
   })
   .on("enter", function(){
-    $("#overlay-chapter1").fadeIn(1000);
-    $("#title-chapter1").fadeOut(1000);
-    $("#go-with-title-1").fadeOut(1000);
-    $(".navigation").fadeIn(1000);
+    $("#overlay-chapter1").fadeIn(500);
+    $("#title-chapter1").fadeOut(500);
+    $("#go-with-title-1").fadeOut(500);
+    $(".navigation").fadeIn(500);
 
   })
 
   .on("leave", function(){
-    $("#overlay-chapter1").fadeOut(1000);
-    $("#title-chapter1").fadeIn(1000);
-    $("#go-with-title-1").fadeIn(1000);
-    $(".navigation").fadeOut(1000);
+    $("#overlay-chapter1").fadeOut(500);
+    $("#title-chapter1").fadeIn(500);
+    $("#go-with-title-1").fadeIn(500);
+    $(".navigation").fadeOut(500);
 
   })
   .addTo(controller);
@@ -190,7 +190,7 @@ $(function(){
   var setPinChapter1Img = new ScrollMagic.Scene({
     triggerElement: "#chapter1-2-image-wrapper",
     triggerHook: 0,
-    duration: '4300',
+    duration: '4900',
   })
   .setPin("#chapter1-2-image-wrapper")
   .addTo(controller);
@@ -247,9 +247,9 @@ $(function(){
     // duration: '500'
   })
   .on("enter", function(){
-    $("#chapter1-img3").fadeOut(700);
+    $("#chapter1-img3").hide();
     $("#chapter1-img2").show();
-    $("#chapter1-img4").delay(1000).fadeIn(2000);
+    $("#chapter1-img4").delay(1200).fadeIn(2000);
   })
   .on("leave", function(){
     $("#chapter1-img3").fadeIn(700);
@@ -292,26 +292,27 @@ $(function(){
 
   })
   .on("enter", function(){
-    $("#overlay-chapter2").fadeIn(1000);
-    $("#title-chapter2").fadeOut(1000);
-    $("#go-with-title-2").fadeOut(1000);
-    $(".navigation").fadeIn(1000);
+    $("#overlay-chapter2").fadeIn(500);
+    $("#title-chapter2").fadeOut(500);
+    $("#go-with-title-2").fadeOut(500);
+    $(".navigation").fadeIn(500);
 
   })
 
   .on("leave", function(){
-    $("#overlay-chapter2").fadeOut(1000);
-    $("#title-chapter2").fadeIn(1000);
-    $("#go-with-title-2").fadeIn(1000);
-    $(".navigation").fadeOut(1000);
+    $("#overlay-chapter2").fadeOut(500);
+    $("#title-chapter2").fadeIn(500);
+    $("#go-with-title-2").fadeIn(500);
+    $(".navigation").fadeOut(500);
 
   })
   .addTo(controller);
   //setPinChapter3
+  var chapter3Height = document.all.chapter3.offsetHeight+130;
   var setPinChapter3= new ScrollMagic.Scene({
     triggerElement: "#chapter3-cover",
     triggerHook: 0,
-    duration: '5430',//真正控制每个章节的高度
+    duration: chapter3Height,//真正控制每个chapter3Height章节的高度
   })
   .setPin("#chapter3-cover")
   .on("enter", function(){
@@ -326,18 +327,18 @@ $(function(){
 
   })
   .on("enter", function(){
-    $("#overlay-chapter3").fadeIn(1000);
-    $("#title-chapter3").fadeOut(1000);
-    $("#go-with-title-3").fadeOut(1000);
-    $(".navigation").fadeIn(1000);
+    $("#overlay-chapter3").fadeIn(500);
+    $("#title-chapter3").fadeOut(500);
+    $("#go-with-title-3").fadeOut(500);
+    $(".navigation").fadeIn(500);
 
   })
 
   .on("leave", function(){
-    $("#overlay-chapter3").fadeOut(1000);
-    $("#title-chapter3").fadeIn(1000);
-    $("#go-with-title-3").fadeIn(1000);
-    $(".navigation").fadeOut(1000);
+    $("#overlay-chapter3").fadeOut(500);
+    $("#title-chapter3").fadeIn(500);
+    $("#go-with-title-3").fadeIn(500);
+    $(".navigation").fadeOut(500);
 
   })
   .addTo(controller);
@@ -357,7 +358,7 @@ $(document).scroll(function(){
       var highlight = $(document).find(".highlight").eq(i).offset().top
       if(top>highlight-$(window).height()*0.8){
         if(highlightFlag[i]==0){
-          $(document).find(".highlight").eq(i).animate({backgroundColor:'rgba(254,208,81,0.4)'},1000)
+          $(document).find(".highlight").eq(i).animate({backgroundColor:'rgba(254,208,81,0.4)'},500)
           highlightFlag[i]=1;
         }
       }

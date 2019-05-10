@@ -69,6 +69,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
       .style("text-anchor", "left")
       .attr("dy", 0)
       .style("fill", "rgb(131, 131, 131)")
+      .style("font-size", "14px")
       .text("数据来源：公开数据整理");
   svg.append("text")
     .attr("class", "xlabel")
