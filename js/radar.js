@@ -414,9 +414,11 @@ var yScale6 = d3.scaleLinear().range([ height6, 0 ]);
   svg6.append("text")
     .attr("transform", "translate(" + xScale6(0)+ " ," + yScale6(15) + ")")
     .style("text-anchor", "left")
+    .style("font-size","12px")
     .attr("dy", 0)
     .style("fill", "rgb(131, 131, 131)")
     .text("数据来源：国际奥林匹克委员会官方网站");
+    
     svg6.append("text")
       .attr("transform", "translate(" + xScale6(22)+ " ," + yScale6(5) + ")")
       .style("text-anchor", "left")

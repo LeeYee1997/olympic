@@ -1,3 +1,4 @@
+
 var width1 = document.all.rect.offsetWidth;;
         var height1 = document.all.rect.offsetHeight;
 
@@ -26,27 +27,27 @@ var width1 = document.all.rect.offsetWidth;;
 
         svg1.append("text")
                 .attr("class", "withdraw-title")
-                .attr("x", xScale1(14))
+                .attr("x", xScale1(20))
                 .attr("y", yScale1(93))
                 .style("text-anchor", "middle")
                 .attr("dy", 0)
                 .style("font-weight", "bold")
-                .text("北京赛区场馆利用情况");
+                .text("北京冬奥会北京赛区场馆利用情况");
 
-        svg1.append("text")
-          .attr("transform", "translate(" + xScale1(40)+ " ," + yScale1(40) + ")")
-          .style("text-anchor", "left")
-          .attr("dy", 0)
-          .style("fill", "rgb(131, 131, 131)")
-          .style("font-size", "14px")
-          .text("数据来源：");
-          svg1.append("text")
-            .attr("transform", "translate(" + xScale1(40)+ " ," + yScale1(35) + ")")
-            .style("text-anchor", "left")
-            .attr("dy", 0)
-            .style("fill", "rgb(131, 131, 131)")
-            .style("font-size", "14px")
-            .text("《中国冬季奥运会发展报告（2017）》 社会科学文献出版社");
+        // svg1.append("text")
+        //   .attr("transform", "translate(" + xScale1(40)+ " ," + yScale1(40) + ")")
+        //   .style("text-anchor", "left")
+        //   .attr("dy", 0)
+        //   .style("fill", "rgb(131, 131, 131)")
+        //   .style("font-size", "14px")
+        //   .text("数据来源：");
+          // svg1.append("text")
+          //   .attr("transform", "translate(" + xScale1(40)+ " ," + yScale1(35) + ")")
+          //   .style("text-anchor", "left")
+          //   .attr("dy", 0)
+          //   .style("fill", "rgb(131, 131, 131)")
+          //   .style("font-size", "14px")
+          //   .text("《中国冬季奥运会发展报告（2017）》 社会科学文献出版社");
 
         svg1.append("text")
                 .attr("class", "ylabel")

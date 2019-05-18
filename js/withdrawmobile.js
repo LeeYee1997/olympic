@@ -5,7 +5,7 @@ const lightblue = "rgba(105,188,244,0.7)";
 const deepblue =  "#265473";
 const grey = "#bbbbbb";
 var fullWidth = window.innerWidth;
-var fullHeight = 650;
+var fullHeight = 580;
 var margin = {top:0, right:0, bottom:0, left:0};  //Top, right, bottom, left
 
 var width = fullWidth - margin.left - margin.right;
@@ -89,7 +89,7 @@ var xAxis = d3.axisTop(yScale).ticks(15);
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .style("font-size", "12px")
-    .text("未入围最终候选");
+    .text("未入围");
 
     // svg.append("text")
     // .attr("class", "xlabel")
@@ -104,7 +104,7 @@ var xAxis = d3.axisTop(yScale).ticks(15);
     .style("text-anchor", "middle")
     .style("font-size", "12px")
     .attr("dy", 0)
-    .text("2000");
+    .text("2000年");
 
   svg.append("text")
     .attr("class", "xlabel")

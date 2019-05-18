@@ -92,12 +92,12 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("dy", 0)
     .text("未入围");
 
-    svg.append("text")
-    .attr("class", "xlabel")
-    .attr("transform", "translate(" + -60 + " ," + 240+ ")")
-    .style("text-anchor", "middle")
-    .attr("dy", 0)
-    .text("最终候选名单");
+    // svg.append("text")
+    // .attr("class", "xlabel")
+    // .attr("transform", "translate(" + -60 + " ," + 240+ ")")
+    // .style("text-anchor", "middle")
+    // .attr("dy", 0)
+    // .text("最终候选名单");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -118,7 +118,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(1.5)+ " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2002年");
+    .text("2002");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -132,7 +132,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(2.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2004年");
+    .text("2004");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -146,7 +146,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(3.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2006年");
+    .text("2006");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -160,7 +160,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(4.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2008年");
+    .text("2008");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -174,7 +174,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" +xScale(5.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2010年");
+    .text("2010");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -188,7 +188,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(6.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2012年");
+    .text("2012");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -202,7 +202,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(7.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2014年");
+    .text("2014");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -216,7 +216,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(8.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2016年");
+    .text("2016");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -230,7 +230,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(9.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2018年");
+    .text("2018");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -244,7 +244,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(10.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2020年");
+    .text("2020");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -258,7 +258,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(11.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2022年");
+    .text("2022");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -272,7 +272,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(12.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2024年");
+    .text("2024");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -286,7 +286,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(13.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2026年");
+    .text("2026");
 
   svg.append("text")
     .attr("class", "xlabel")
@@ -300,7 +300,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
     .attr("transform", "translate(" + xScale(14.5) + " ," + -80+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
-    .text("2028年");
+    .text("2028");
 
   svg.append("text")
     .attr("class", "xlabel")
