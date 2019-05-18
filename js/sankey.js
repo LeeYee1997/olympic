@@ -13,6 +13,7 @@ sankeyOption = {
     tooltip: {
         trigger: 'item',
         triggerOn: 'mousemove',
+        confine: true,
 
     },
     animation: true,

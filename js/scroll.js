@@ -21,7 +21,7 @@ $(function(){
   var setPin = new ScrollMagic.Scene({
     triggerElement: "#withdrawContainer",
     triggerHook: 0,
-    duration: '1050'
+    duration: '1350'
   })
   .setPin("#withdraw")
   .addTo(controller);
@@ -124,10 +124,11 @@ $(function(){
   })
   .addTo(controller);
   //setPinCover
+  var introductionHeight = document.all.introduction.offsetHeight+150;
   var setPinCover = new ScrollMagic.Scene({
     triggerElement: "#cover",
     triggerHook: 0,
-    duration: '2950',
+    duration: introductionHeight,
   })
   .setPin("#cover")
   .addTo(controller);
@@ -153,10 +154,11 @@ $(function(){
   })
   .addTo(controller);
   //setPinChapter1
+  var chapter1Height = document.all.chapter1.offsetHeight+4000;
   var setPinChapter1 = new ScrollMagic.Scene({
     triggerElement: "#chapter1-cover",
     triggerHook: 0,
-    duration: '5900',//真正控制每个章节的高度
+    duration: chapter1Height,//真正控制每个章节的高度
   })
   .setPin("#chapter1-cover")
   .on("enter", function(){
@@ -274,10 +276,11 @@ $(function(){
   })
     .addTo(controller);
   //setPinChapter2
+  var chapter2Height = document.all.chapter2.offsetHeight+150;
   var setPinChapter2= new ScrollMagic.Scene({
     triggerElement: "#chapter2-cover",
     triggerHook: 0,
-    duration: '4900',//真正控制每个章节的高度
+    duration: chapter2Height,//真正控制每个章节的高度
   })
   .setPin("#chapter2-cover")
   .on("enter", function(){
