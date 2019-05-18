@@ -6,7 +6,8 @@ option1 = {
     },
      tooltip: {
         formatter: "北京：14256.6</br>巴黎：2038</br>伊斯坦布尔：525</br>多伦多：9679.5",
-        backgroundColor:"rgba(255,255,255,0.7)"
+        backgroundColor:"rgba(255,255,255,0.7)",
+        confine:true,
      },
     color:['#265473'],
     radar: {
@@ -47,7 +48,8 @@ option2 = {
     },
      tooltip: {
         formatter: "平昌：3400</br>温哥华：929.5</br>萨尔茨堡：599",
-        backgroundColor:"rgba(255,255,255,0.7)"
+        backgroundColor:"rgba(255,255,255,0.7)",
+                confine:true,
      },
     color:['#265473'],
     radar: {
@@ -89,7 +91,8 @@ option3 = {
     },
      tooltip: {
         formatter: "伦敦：15800</br>巴黎：6200</br>莫斯科：10000</br>纽约：7600",
-        backgroundColor:"rgba(255,255,255,0.7)"
+        backgroundColor:"rgba(255,255,255,0.7)",
+                confine:true,
      },
     color:['#265473'],
     radar: {
@@ -132,7 +135,8 @@ option4 = {
     },
      tooltip: {
         formatter: "索契：8855</br>萨尔茨堡：2357</br>平昌：7125",
-        backgroundColor:"rgba(255,255,255,0.7)"
+        backgroundColor:"rgba(255,255,255,0.7)",
+                confine:true,
      },
     color:['#265473'],
     radar: {
@@ -174,7 +178,8 @@ option5 = {
     },
      tooltip: {
         formatter: "里约热内卢：11100</br>芝加哥：1030</br>东京：3090</br>马德里：3440",
-        backgroundColor:"rgba(255,255,255,0.7)"
+        backgroundColor:"rgba(255,255,255,0.7)",
+                confine:true,
      },
     color:['#265473'],
     radar: {
@@ -215,7 +220,8 @@ option6 = {
     },
      tooltip: {
         formatter: "平昌：$ 6300m</br>安纳西：2500</br>慕尼黑：1860",
-        backgroundColor:"rgba(255,255,255,0.7)"
+        backgroundColor:"rgba(255,255,255,0.7)",
+                confine:true,
      },
     color:['#265473'],
     radar: {

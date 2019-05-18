@@ -21,7 +21,7 @@ $(function(){
   var setPin = new ScrollMagic.Scene({
     triggerElement: "#withdrawContainer",
     triggerHook: 0,
-    duration: '1350'
+    duration: '1850'
   })
   .setPin("#withdraw")
   .addTo(controller);

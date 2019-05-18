@@ -12,7 +12,6 @@ sankeyOption = {
     borderColor: ["#000"],
     tooltip: {
         trigger: 'item',
-        triggerOn: 'mousemove',
         confine: true,
 
     },
@@ -23,6 +22,7 @@ sankeyOption = {
             left: '13%',
             bottom: '10%',
             focusNodeAdjacency: 'allEdges',
+            draggable: false,
             data: [
             {
                         name: '2002年 盐湖城冬奥会'
