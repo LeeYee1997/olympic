@@ -9,11 +9,7 @@
 		$("#preloader").delay(600).fadeOut();
 	});
 
-	// Scrollspy
-	$('body').scrollspy({
-		target: '#nav',
-		offset: $(window).height() / 2
-	});
+
 
 	///////////////////////////
 	// Smooth scroll

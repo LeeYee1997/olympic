@@ -5,8 +5,8 @@ const lightblue = "rgba(105,188,244,0.7)";
 const deepblue =  "#265473";
 const grey = "#bbbbbb";
 var fullWidth = window.innerWidth;
-var fullHeight = 580;
-var margin = {top:0, right:0, bottom:0, left:0};  //Top, right, bottom, left
+var fullHeight = 620;
+var margin = {top:0, right:0, bottom:40, left:0};  //Top, right, bottom, left
 
 var width = fullWidth - margin.left - margin.right;
 var height = fullHeight - margin.top - margin.bottom;
@@ -59,11 +59,11 @@ var xAxis = d3.axisTop(yScale).ticks(15);
       .attr("transform", "translate(" + xScale(-30)+ " ," + yScale(-1) + ")")
       .style("text-anchor", "left")
       .attr("dy", 0)
-      .text("历届奥运会申办情况");
+      .text("部分国家退出申办流程");
     svg.append("text")
       // .attr("class", "data-source")
-      .attr("transform", "translate(" + xScale(-35)+ " ," + yScale(14.5) + ")")
-      .style("text-anchor", "left")
+      .attr("transform", "translate(" + xScale(35)+ " ," + 610+ ")")
+      .style("text-anchor", "end")
       .attr("dy", 0)
       .style("fill", "rgb(131, 131, 131)")
       .style("font-size", "12px")
@@ -74,7 +74,7 @@ var xAxis = d3.axisTop(yScale).ticks(15);
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .style("font-size", "12px")
-    .text("入围最终候选");
+    .text("入围");
 
     // svg.append("text")
     // .attr("class", "xlabel")
@@ -412,25 +412,25 @@ var xAxis = d3.axisTop(yScale).ticks(15);
   // 在svg上建立x、y轴
 
 
-        var text2 = svg.append("text")
-        .text("因政府或民众")
-        .attr("x", xScale(20))
-        .attr("y", yScale(13.6))
-        .attr("class","legend2")
-        .style("font-size", "12px")
-        var text2 = svg.append("text")
-        .text("不支持而退选")
-        .attr("x", xScale(20))
-        .attr("y", yScale(14.0))
-        .attr("class","legend2")
-        .style("font-size", "12px")
-
-        var text3 = svg.append("text")
-        .text("退选")
-        .attr("x", xScale(20))
-        .attr("y", yScale(12.6))
-        .attr("class","legend1")
-        .style("font-size", "12px")
+        // var text2 = svg.append("text")
+        // .text("因政府或民众")
+        // .attr("x", xScale(20))
+        // .attr("y", yScale(13.6))
+        // .attr("class","legend2")
+        // .style("font-size", "12px")
+        // var text2 = svg.append("text")
+        // .text("不支持而退选")
+        // .attr("x", xScale(20))
+        // .attr("y", yScale(14.0))
+        // .attr("class","legend2")
+        // .style("font-size", "12px")
+        //
+        // var text3 = svg.append("text")
+        // .text("退选")
+        // .attr("x", xScale(20))
+        // .attr("y", yScale(12.6))
+        // .attr("class","legend1")
+        // .style("font-size", "12px")
 
 // Adding all the mouse events for the tooltips!
         circles
@@ -727,7 +727,7 @@ var xAxis = d3.axisTop(yScale).ticks(15);
         if (d.figure === "") {
             myTooltip
           .style("display", null)
-          .html("<p>"+d.CountryName + d.Reason+"</p>");
+          .html("<p>"+d.CountryName +"</p>");
         }
 
         }

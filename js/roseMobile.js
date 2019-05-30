@@ -10,7 +10,7 @@ overcost_option1 = {
     tooltip : {
         trigger: 'item',
         // formatter: "{a} <br/>{b} : {c} ({d}%)"
-        formatter: "{b} : 超支{c} %"
+        formatter: "{b} 超支{c} %"
     },
     animation: false,
     // legend: {

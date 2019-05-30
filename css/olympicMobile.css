@@ -11,6 +11,12 @@ html, body{
     background-color: #FFF;
     z-index: 9999999;
 }
+.blur{
+  filter: blur(6px);
+}
+.radar-city{
+  font-size: 14px;
+}
 .preloader img{
   position: absolute;
   height: 100px;
@@ -56,10 +62,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #10161A;
 }
 .white-text{
-  color: rgb(255, 255, 255);
+  color: black;
 }
 .blue-bg{
-    background-color: rgba(21,65,124,0.8);
+    background-color: rgb(244, 244, 244);
 }
 .chapter{
   width: 100%;
@@ -253,7 +259,7 @@ a:hover{
     background-image: url('../image/background2.jpg');
     background-position: center;
     background-size: auto 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 .bg-img-2 {
     position: absolute;
@@ -265,7 +271,7 @@ a:hover{
     background-image: url('../image/bg_1.jpg');
     background-position: center;
     background-size: auto 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 .bg-img-3 {
     position: absolute;
@@ -277,7 +283,7 @@ a:hover{
     background-image: url('../image/bg_2.jpg');
     background-position: center;
     background-size: auto 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 .bg-img-4 {
     position: absolute;
@@ -289,7 +295,7 @@ a:hover{
     background-image: url('../image/bg_3.jpg');
     background-position: center;
     background-size: auto 100%;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 
@@ -437,6 +443,17 @@ a:hover{
 .chapter2-5{
   position: relative;
   top: -130px;
+}
+#sankey svg text{
+  font-size: 14px !important;
+
+}
+tspan.solidones{
+  text-anchor: end;
+  display: block;
+  width: 50px;
+  text-align: left;
+  display: none;
 }
 /*chapter2*/
 #chapter3{
@@ -652,14 +669,14 @@ margin-top: 20px;
   top: -600px;
   z-index: -999;
 }
-#radar1 svg text,
+/* #radar1 svg text,
 #radar2 svg text,
 #radar3 svg text,
 #radar4 svg text,
 #radar5 svg text,
 #radar6 svg text{
   font-size: 16px !important;
-}
+} */
 #radar1 svg ,
 #radar2 svg ,
 #radar3 svg ,

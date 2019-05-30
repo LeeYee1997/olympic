@@ -6,7 +6,7 @@ const deepblue =  "#265473";
 const grey = "#bbbbbb";
 var fullWidth = window.innerWidth-20;
 var fullHeight = 650;
-var margin = {top:220, right:100, bottom:50, left:200};  //Top, right, bottom, left
+var margin = {top:100, right:100, bottom:50, left:200};  //Top, right, bottom, left
 
 var width = fullWidth - margin.left - margin.right;
 var height = fullHeight - margin.top - margin.bottom;
@@ -54,44 +54,49 @@ var xAxis = d3.axisTop(xScale).ticks(15);
        xScale.domain([0,15]);
 
   yScale.domain(
-    d3.extent(data, function(d) {
-      return +d.Unemployment;
-    }));
+    [0,100]);
     svg.append("text")
       .attr("class", "withdraw-title")
-      .attr("transform", "translate(" + xScale(0)+ " ," + -120 + ")")
+      .attr("transform", "translate(" + xScale(0)+ " ," + yScale(100) + ")")
       .style("text-anchor", "left")
       .attr("dy", 0)
-      .text("历届奥运会申办情况");
+      .text("部分国家因为政府或民众不支持而退出申办流程");
     svg.append("text")
       // .attr("class", "data-source")
-      .attr("transform", "translate(" + xScale(12)+ " ," + 340 + ")")
-      .style("text-anchor", "left")
+      .attr("transform", "translate(" + xScale(15)+ " ," + yScale(0) + ")")
+      .style("text-anchor", "end")
       .attr("dy", 0)
       .style("fill", "rgb(131, 131, 131)")
       .style("font-size", "14px")
       .text("数据来源：公开数据整理");
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + -60 + " ," + 60+ ")")
+    .attr("transform", "translate(" + -60 + " ," + yScale(75)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("入围");
 
-    svg.append("text")
-    .attr("class", "xlabel")
-    .attr("transform", "translate(" + -60 + " ," + 80+ ")")
-    .style("text-anchor", "middle")
-    .attr("dy", 0)
-    .text("最终候选名单");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + -60 + " ," + 220+ ")")
+    .attr("transform", "translate(" + -60 + " ," + yScale(26)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("未入围");
-
+    svg.append("line")
+               .attr("x1",xScale(0))
+               .attr("y1",yScale(43))
+               .attr("x2",xScale(15))
+               .attr("y2",yScale(43))
+               .attr("stroke","grey")
+               .attr("stroke-width",0.7);
+               svg.append("line")
+                          .attr("x1",xScale(0))
+                          .attr("y1",yScale(58))
+                          .attr("x2",xScale(15))
+                          .attr("y2",yScale(58))
+                          .attr("stroke","grey")
+                          .attr("stroke-width",0.7);
     // svg.append("text")
     // .attr("class", "xlabel")
     // .attr("transform", "translate(" + -60 + " ," + 240+ ")")
@@ -101,210 +106,210 @@ var xAxis = d3.axisTop(xScale).ticks(15);
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(0.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(0.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2000年");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(0.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(0.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("悉尼");
 
         svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(1.5)+ " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(1.5)+ " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2002");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(1.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(1.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("盐湖城");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(2.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(2.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2004");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(2.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(2.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("雅典");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(3.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(3.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2006");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(3.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(3.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("都灵");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(4.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(4.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2008");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(4.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(4.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("北京");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" +xScale(5.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" +xScale(5.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2010");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(5.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(5.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("温哥华");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(6.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(6.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2012");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(6.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(6.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("伦敦");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(7.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(7.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2014");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(7.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(7.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("索契");
 
     svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(8.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(8.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2016");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(8.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(8.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("里约");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(9.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(9.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2018");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(9.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(9.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("平昌");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(10.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(10.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2020");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(10.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(10.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("东京");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(11.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(11.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2022");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(11.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(11.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("北京");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(12.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(12.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2024");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(12.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(12.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("巴黎");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(13.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(13.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2026");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(13.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(13.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("待定");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(14.5) + " ," + -80+ ")")
+    .attr("transform", "translate(" + xScale(14.5) + " ," + yScale(52)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("2028");
 
   svg.append("text")
     .attr("class", "xlabel")
-    .attr("transform", "translate(" + xScale(14.5) + " ," + -55+ ")")
+    .attr("transform", "translate(" + xScale(14.5) + " ," + yScale(47)+ ")")
     .style("text-anchor", "middle")
     .attr("dy", 0)
     .text("洛杉矶");
@@ -367,23 +372,19 @@ var xAxis = d3.axisTop(xScale).ticks(15);
             }
             })
 
-  // 在svg上建立x、y轴
-  svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + ( height -235 )  + ")")
-    .call(xAxis);
 
-        var text2 = svg.append("text")
-        .text("因政府或民众不支持而退选")
-        .attr("x", xScale(4.3))
-        .attr("y",385)
-        .attr("class","legend2")
 
-        var text3 = svg.append("text")
-        .text("退选")
-        .attr("x",xScale(8))
-        .attr("y",385)
-        .attr("class","legend1")
+        // var text2 = svg.append("text")
+        // .text("因政府或民众不支持而退选")
+        // .attr("x", xScale(4.3))
+        // .attr("y",385)
+        // .attr("class","legend2")
+
+        // var text3 = svg.append("text")
+        // .text("退选")
+        // .attr("x",xScale(8))
+        // .attr("y",385)
+        // .attr("class","legend1")
 
 // Adding all the mouse events for the tooltips!
         circles
@@ -435,7 +436,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
          if (d.Country === "00_Uzbekistan_Tashkent") {
         myTooltip
             .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-            .html("<p>乌兹别克斯坦的塔什干为了获得世界对</br>该国存在和新独立的认可而竞标奥运会，之后竞标被撤回</p>");
+            .html("<p>乌兹别克斯坦的塔什干为了获得世界对该国存在和新独立的</br>认可而竞标奥运会，之后竞标被撤回</p>");
 
         // d3.select(this)//悬停在上面的元素
         //     .attr("r", 10);
@@ -513,7 +514,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
         if (d.Country === "22_Ukraine_Lviv") {
         myTooltip
             .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-            .html("<p>乌克兰利沃夫：国际奥委会宣布利沃夫</br>“将注意力转向2026年奥运会申办，而不是继续申请2022年”，</br>因此撤回申请。 因为2013年的“乌克兰危机”</p>");
+            .html("<p>乌克兰利沃夫：国际奥委会宣布利沃夫“将注意力转向2026年奥运会申办，而不是继续申请2022年”，因此撤回申请。 因为2013年的“乌克兰危机”</p>");
 
         // d3.select(this)//悬停在上面的元素
         //     .attr("r", 10);
@@ -593,7 +594,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
          if (d.Country === "26_Canada_Calgary") {
         myTooltip
             .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-            .html("<p>加拿大卡尔加里在2018年11月13日的</br>一次公投后，2018年11月19日退选</p>");
+            .html("<p>加拿大卡尔加里在2018年11月13日的一次公投后，2018年11月19日退选</p>");
 
 
 
@@ -680,7 +681,7 @@ var xAxis = d3.axisTop(xScale).ticks(15);
         if (d.figure === "") {
             myTooltip
           .style("display", null)
-          .html("<p>"+d.CountryName + d.Reason+"</p>");
+          .html("<p>"+d.CountryName + "</p>");
         }
 
         }

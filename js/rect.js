@@ -27,12 +27,12 @@ var width1 = document.all.rect.offsetWidth;;
 
         svg1.append("text")
                 .attr("class", "withdraw-title")
-                .attr("x", xScale1(20))
+                .attr("x", xScale1(25))
                 .attr("y", yScale1(93))
                 .style("text-anchor", "middle")
                 .attr("dy", 0)
                 .style("font-weight", "bold")
-                .text("北京冬奥会北京赛区场馆利用情况");
+                .text("2022冬奥会北京赛区66%的场馆为现有资源");
 
         // svg1.append("text")
         //   .attr("transform", "translate(" + xScale1(40)+ " ," + yScale1(40) + ")")
@@ -208,7 +208,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "shuilifang") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>国家游泳中心（水立方），</br>即将用于冰壶比赛</p>");
+                .html("<p>国家游泳中心（水立方），</br>用于冰壶比赛</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -218,7 +218,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "guojiatiyuguan") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>国家体育馆，</br>即将用于男子冰球比赛</p>");
+                .html("<p>国家体育馆，</br>用于男子冰球比赛</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -228,7 +228,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "wukesong") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>五棵松体育中心，</br>即将用于女子冰球比赛</p>");
+                .html("<p>五棵松体育中心，</br>用于女子冰球比赛</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -238,7 +238,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "shoudutiyuguan") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>首都体育馆，</br>即将用于短道速滑及花样滑冰比赛</p>");
+                .html("<p>首都体育馆，</br>用于短道速滑及花样滑冰比赛</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -248,7 +248,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "guojiatiyuchang") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>国家体育场（鸟巢），</br>即将用于开闭幕式</p>");
+                .html("<p>国家体育场（鸟巢），</br>用于开闭幕式</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -258,7 +258,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "guojiahuiyizhongxin") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>国家会议中心，</br>即将用做新闻中心</p>");
+                .html("<p>国家会议中心，</br>用做新闻中心</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -268,7 +268,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "shouduhuabingguan") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>首都滑冰馆，</br>即将用于冬奥会训练</p>");
+                .html("<p>首都滑冰馆，</br>用于冬奥会训练</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -278,7 +278,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "shoutizongheguan") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>首体综合馆，</br>即将用于冬奥会训练</p>");
+                .html("<p>首体综合馆，</br>用于冬奥会训练</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -288,7 +288,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "guojiasuhuaguan") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>国家速滑馆，</br>即将用于速度滑冰比赛</p>");
+                .html("<p>国家速滑馆，</br>用于速度滑冰比赛</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -298,7 +298,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "beijingaoyuncun") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>北京奥运村，</br>即将用于冬奥会住宿</p>");
+                .html("<p>北京奥运村，</br>用于冬奥会住宿</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -308,7 +308,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "duandaosuhua") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>首体短道速滑馆，</br>即将用于冬奥会训练</p>");
+                .html("<p>首体短道速滑馆，</br>用于冬奥会训练</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()
@@ -318,7 +318,7 @@ var width1 = document.all.rect.offsetWidth;;
             if (this.id === "banjiang") {
             rectooltip
                 .style("display", null) // 区别"none": 不呈现；"null": 取消之前所有给display的属性。
-                .html("<p>北京颁奖广场，</br>即将用于冬奥会颁奖</p>");
+                .html("<p>北京颁奖广场，</br>用于冬奥会颁奖</p>");
 
             d3.select(this)//悬停在上面的元素
                 .transition()

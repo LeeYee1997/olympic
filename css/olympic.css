@@ -8,6 +8,9 @@
     background-color: #FFF;
     z-index: 9999999;
 }
+.blur{
+  filter: blur(6px);
+}
 .preloader img{
   position: absolute;
   height: 100px;
@@ -53,10 +56,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #10161A;
 }
 .white-text{
-  color: rgb(255, 255, 255);
+  color: black;
 }
 .blue-bg{
-    background-color: rgba(21,65,124,0.8);
+      background-color: rgb(244, 244, 244);
 }
 .chapter{
   width: 100%;
@@ -230,6 +233,8 @@ a:hover{
       left: 10%;
       top: 35%;
       width: 80%;
+}
+.title-explain{
 }
 .title-sub{
   width: 80%;
@@ -617,6 +622,9 @@ margin-top: 20px;
   top: -600px;
   z-index: -999;
 }
+.radarCircles{
+  opacity: 0;
+}
 #radar1 svg text,
 #radar2 svg text,
 #radar3 svg text,
@@ -624,6 +632,10 @@ margin-top: 20px;
 #radar5 svg text,
 #radar6 svg text{
   font-size: 16px !important;
+}
+#sankey svg text{
+  font-size: 14px !important;
+
 }
 /*rose*/
 #overcost svg{
@@ -648,7 +660,7 @@ margin-top: 20px;
   cursor: pointer;
 }
 #rect .ylabel{
-    font-size: 1em;
+    font-size: 16px;
     font-family: "微软雅黑", "黑体", sans-serif;
     color:black;
 }
@@ -715,7 +727,7 @@ font-size: 16px;
   }
   .mobile-wall-alert{
     position: fixed;
-    left: 5%;
+    left: 0%;
     top: 25%;
     width: 90%;
     font-size: 26px;

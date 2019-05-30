@@ -105,7 +105,7 @@ $(function(){
     d3.selectAll(".radarCircles")
     .transition()
     .duration(300)
-      .attr("opacity", "1");
+      .style("opacity", "1");
     $("#radarlegend1").fadeIn(500);
     $("#radarlegend2").fadeIn(500);
     $("#radarlegend3").fadeIn(500);
@@ -117,7 +117,7 @@ $(function(){
     d3.selectAll(".radarCircles")
     .transition()
     .duration(300)
-      .attr("opacity", "0");
+      .style("opacity", "0");
       $("#radarlegend1").fadeOut(500);
       $("#radarlegend2").fadeOut(500);
       $("#radarlegend3").fadeOut(500);
@@ -138,6 +138,7 @@ $(function(){
     triggerHook: 0.95,
   })
   .on("enter", function(){
+    $(".bg-img-1").addClass("blur");
     $("#overlay-intro").fadeIn(500);
     $(".title-all").fadeOut(500);
     $("#overlay-all").fadeOut(500);
@@ -146,6 +147,7 @@ $(function(){
   })
 
   .on("leave", function(){
+    $(".bg-img-1").removeClass("blur");
     $(".overlay-deeper").fadeOut(500);
     $(".title-all").fadeIn(500);
     $("#overlay-all").fadeIn(500);
@@ -173,6 +175,7 @@ $(function(){
 
   })
   .on("enter", function(){
+        $(".bg-img-2").addClass("blur");
     $("#overlay-chapter1").fadeIn(500);
     $("#title-chapter1").fadeOut(500);
     $("#go-with-title-1").fadeOut(500);
@@ -181,6 +184,7 @@ $(function(){
   })
 
   .on("leave", function(){
+        $(".bg-img-2").removeClass("blur");
     $("#overlay-chapter1").fadeOut(500);
     $("#title-chapter1").fadeIn(500);
     $("#go-with-title-1").fadeIn(500);
@@ -295,6 +299,7 @@ $(function(){
 
   })
   .on("enter", function(){
+        $(".bg-img-3").addClass("blur");
     $("#overlay-chapter2").fadeIn(500);
     $("#title-chapter2").fadeOut(500);
     $("#go-with-title-2").fadeOut(500);
@@ -303,6 +308,7 @@ $(function(){
   })
 
   .on("leave", function(){
+        $(".bg-img-3").removeClass("blur");
     $("#overlay-chapter2").fadeOut(500);
     $("#title-chapter2").fadeIn(500);
     $("#go-with-title-2").fadeIn(500);
@@ -330,6 +336,7 @@ $(function(){
 
   })
   .on("enter", function(){
+        $(".bg-img-4").addClass("blur");
     $("#overlay-chapter3").fadeIn(500);
     $("#title-chapter3").fadeOut(500);
     $("#go-with-title-3").fadeOut(500);
@@ -338,6 +345,7 @@ $(function(){
   })
 
   .on("leave", function(){
+        $(".bg-img-4").removeClass("blur");
     $("#overlay-chapter3").fadeOut(500);
     $("#title-chapter3").fadeIn(500);
     $("#go-with-title-3").fadeIn(500);
@@ -366,16 +374,7 @@ $(document).scroll(function(){
         }
       }
     }
-    for(var i=0; i<whiteHighlight.length; i++){
 
-      var wHighlight = $(document).find(".whitehighlight").eq(i).offset().top
-      if(top>wHighlight-$(window).height()*0.8){
-        if(whiteHighlight[i]==0){
-          $(document).find(".whitehighlight").eq(i).animate({backgroundColor:'rgba(255,255,255,0.5)'},1000)
-          whiteHighlight[i]=1;
-        }
-      }
-    }
 
 
 

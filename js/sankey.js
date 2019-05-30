@@ -19,7 +19,7 @@ sankeyOption = {
     series: [
         {
             type: 'sankey',
-            left: '13%',
+            left: '5%',
             bottom: '10%',
             focusNodeAdjacency: 'allEdges',
             draggable: false,

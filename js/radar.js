@@ -5,12 +5,13 @@ option1 = {
         text: '2008',
     },
      tooltip: {
-        formatter: "北京：14256.6</br>巴黎：2038</br>伊斯坦布尔：525</br>多伦多：9679.5",
+       formatter: "北京：142.6亿</br>多伦多：96.8亿</br>巴黎：20.4亿</br>伊斯坦布尔：5.3亿",
         backgroundColor:"rgba(255,255,255,0.7)"
      },
     color:['#265473'],
     radar: {
         // shape: 'circle',
+                radius:"70%",
         name: {
             textStyle: {
                 color: '#000',
@@ -45,12 +46,13 @@ option2 = {
         text: '2010'
     },
      tooltip: {
-        formatter: "平昌：3400</br>温哥华：929.5</br>萨尔茨堡：599",
+       formatter: "平昌：34亿</br>温哥华：9.3亿</br>萨尔茨堡：6.0亿",
         backgroundColor:"rgba(255,255,255,0.7)"
      },
     color:['#265473'],
     radar: {
         // shape: 'circle',
+                radius:"70%",
         name: {
             textStyle: {
                 color: '#000',
@@ -86,12 +88,13 @@ option3 = {
         text: '2012'
     },
      tooltip: {
-        formatter: "伦敦：15800</br>巴黎：6200</br>莫斯科：10000</br>纽约：7600",
+       formatter: "伦敦：158.0亿</br>莫斯科：100.0亿</br>纽约：76.0亿</br>巴黎：62.0亿",
         backgroundColor:"rgba(255,255,255,0.7)"
      },
     color:['#265473'],
     radar: {
         // shape: 'circle',
+                radius:"70%",
         name: {
             textStyle: {
                 color: '#000',
@@ -128,12 +131,13 @@ option4 = {
         text: '2014'
     },
      tooltip: {
-        formatter: "索契：8855</br>萨尔茨堡：2357</br>平昌：7125",
+       formatter: "索契：88.6亿</br>平昌：71.3亿</br>萨尔茨堡：23.6亿",
         backgroundColor:"rgba(255,255,255,0.7)"
      },
     color:['#265473'],
     radar: {
         // shape: 'circle',
+                radius:"70%",
         name: {
             textStyle: {
                 color: '#000',
@@ -169,12 +173,13 @@ option5 = {
         text: '2016'
     },
      tooltip: {
-        formatter: "里约热内卢：11100</br>芝加哥：1030</br>东京：3090</br>马德里：3440",
+       formatter: "里约热内卢：111.0亿</br>马德里：34.4亿</br>东京：30.9亿</br>芝加哥：10.3亿",
         backgroundColor:"rgba(255,255,255,0.7)"
      },
     color:['#265473'],
     radar: {
         // shape: 'circle',
+                radius:"70%",
         name: {
             textStyle: {
                 color: '#000',
@@ -209,12 +214,13 @@ option6 = {
         text: '2018'
     },
      tooltip: {
-        formatter: "平昌：$ 6300m</br>安纳西：2500</br>慕尼黑：1860",
+       formatter: "平昌：63.0亿</br>安纳西：25.0亿</br>慕尼黑：18.6亿",
         backgroundColor:"rgba(255,255,255,0.7)"
      },
     color:['#265473'],
     radar: {
         // shape: 'circle',
+        radius:"70%",
         name: {
             textStyle: {
                 color: '#000',
@@ -264,9 +270,9 @@ var yScale1 = d3.scaleLinear().range([ height1, 0 ]);
 
  var circle1 = svg1.append("circle")
  .attr("cx", xScale1(50))
- .attr("cy", yScale1(86))
+ .attr("cy", yScale1(84))
  .attr("r", 10)
- .attr("opacity", "0")
+
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
 
@@ -293,7 +299,7 @@ var yScale2 = d3.scaleLinear().range([ height2, 0 ]);
  .attr("cx", xScale2(48))
  .attr("cy", yScale2(49))
  .attr("r", 10)
- .attr("opacity", "0")
+
 
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
@@ -319,9 +325,9 @@ var yScale3 = d3.scaleLinear().range([ height3, 0 ]);
 
  var circle3 = svg3.append("circle")
  .attr("cx", xScale3(50))
- .attr("cy", yScale3(90))
+ .attr("cy", yScale3(88))
  .attr("r", 10)
- .attr("opacity", "0")
+
 
  .attr("fill","rgba(238,182,53,0.9)")
  .attr("class", "radarCircles");
@@ -350,7 +356,7 @@ var yScale4 = d3.scaleLinear().range([ height4, 0 ]);
  .attr("cx", xScale4(50))
  .attr("cy", yScale4(72))
  .attr("r", 10)
- .attr("opacity", "0")
+
 
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
@@ -376,9 +382,9 @@ var yScale5 = d3.scaleLinear().range([ height5, 0 ]);
 
  var circle5 = svg5.append("circle")
  .attr("cx", xScale4(50))
- .attr("cy", yScale4(78))
+ .attr("cy", yScale4(77))
  .attr("r", 10)
- .attr("opacity", "0")
+
 
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
@@ -406,22 +412,22 @@ var yScale6 = d3.scaleLinear().range([ height6, 0 ]);
  .attr("cx", xScale6(50))
  .attr("cy", yScale6(66))
  .attr("r", 10)
- .attr("opacity", "0")
+
 
  .attr("fill","rgba(238,182,53,0.9)")
   .attr("class", "radarCircles");
 
-  svg6.append("text")
-    .attr("transform", "translate(" + xScale6(0)+ " ," + yScale6(15) + ")")
-    .style("text-anchor", "left")
-    .style("font-size","12px")
-    .attr("dy", 0)
-    .style("fill", "rgb(131, 131, 131)")
-    .text("数据来源：国际奥林匹克委员会官方网站");
-    
-    svg6.append("text")
-      .attr("transform", "translate(" + xScale6(22)+ " ," + yScale6(5) + ")")
-      .style("text-anchor", "left")
-      .attr("dy", 0)
-      .style("fill", "rgb(131, 131, 131)")
-      .text("——历届奥运会各申办城市申奥文件");
+  // svg6.append("text")
+  //   .attr("transform", "translate(" + xScale6(0)+ " ," + yScale6(15) + ")")
+  //   .style("text-anchor", "left")
+  //   .style("font-size","12px")
+  //   .attr("dy", 0)
+  //   .style("fill", "rgb(131, 131, 131)")
+  //   .text("数据来源：国际奥林匹克委员会官方网站");
+
+  //   svg6.append("text")
+  //     .attr("transform", "translate(" + xScale6(22)+ " ," + yScale6(5) + ")")
+  //     .style("text-anchor", "left")
+  //     .attr("dy", 0)
+  //     .style("fill", "rgb(131, 131, 131)")
+  //     .text("——历届奥运会各申办城市申奥文件");
